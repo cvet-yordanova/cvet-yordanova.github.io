@@ -1,0 +1,31 @@
+<!DOCTYPE>
+<html>
+	<head>
+		
+	</head>
+	<body>
+	<div class="card-container">
+		<div class="card"></div>
+	</div>
+	</body>
+</html>
+
+
+<style>
+
+	.card-container{
+		perspective:700px;
+		background:black;
+	}
+	.card{
+		margin:20px;
+		background:#5677fc;
+		width:100px;
+		height:100px;
+		transition:all 0.6s ease;
+		transform-style:preserve-3d;
+	}
+	.card:hover{
+		transform:rotateY(180deg);
+	}	
+</style>
