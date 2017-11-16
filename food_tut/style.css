@@ -27,6 +27,7 @@ header{
 	height:100vh;
 	background-position:center;
 	background-size:cover;
+	background-attachment:fixed;
 }
 h1{
 	color:white;
@@ -116,6 +117,54 @@ h3:after{
 .features h4{
 	text-align:center;
 }
+
+.meal-showcase{
+	
+	list-style:none;
+	width:100%;
+	
+}
+
+.meal-showcase li{
+	display:block;
+	width:25%;
+	float:left;
+}
+
+.meal-photo{
+	width:100%;
+	margin:0;
+	overflow:hidden;
+}
+
+.meal-photo img{
+	width:100%;
+	height:auto;
+	transition:transform 0.5s;
+}
+
+.meal-photo img:hover{
+	transform:scale(1.05);
+}
+
+.meal{
+	margin-top:60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
