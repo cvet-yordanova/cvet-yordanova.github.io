@@ -1,0 +1,105 @@
+﻿<?Infragistics.Models format="xaml" version="29" appVersion="9.2.1000.51"?>
+<Page xmlns="http://prototypes.infragistics.com/"
+                                                                                   Id="c7c6348e-c586-4f6b-b063-4c657a55133a">
+    <Page.Content>
+        <Content Width="1053" Height="1288" Id="49b5a431-9f30-4020-b1b6-319ab4cfe0ef">
+            <Content.Layers>
+                <Layer Id="33a0608f-2052-490b-bae8-c83935cc2618" Panel.Layout="Stretch" />
+                <AnnotationsLayer Id="d34513ff-938d-4ac6-b1c3-7a2c8720981a" Panel.Layout="Stretch" />
+            </Content.Layers>
+            <Content.Viewbox>
+                <Viewbox Id="9eb76c73-c3dd-4312-b319-1a2bba0e3b74" />
+            </Content.Viewbox>
+            <Content.GuidesInfo>
+                <GuidesInfo Id="457d8320-1f99-4dcd-a744-f0b51097cf15" />
+            </Content.GuidesInfo>
+        </Content>
+    </Page.Content>
+    <Page.Device>
+        <DeviceInfo Id="none" Orientation="None" />
+    </Page.Device>
+    <Page.Scenes>
+        <Scene Title="Start" Created="12/04/2017 15:10:36" Id="0b0a27ee-3dbb-4857-a3dc-cac91efd67ce">
+            <Scene.KeyFrames>
+                <KeyFrame Id="e8ff587d-b340-4106-91b3-6d2f962b953f">
+                    <KeyFrame.Operations>
+                        <Add Property="Panel.Children" Target="33a0608f-2052-490b-bae8-c83935cc2618">
+                            <Add.Item>
+                                <ContainerBox Background="#FE2C2117" CornerRadius="7" Opacity="0.8" Id="15721b30-9f93-483e-b229-5110d00ccbb0" Panel.Bounds="53,269,947{5,2147483647},379{5,2147483647}">
+                                    <ContainerBox.Content>
+                                        <Container ClipToContainer="True" Id="80a887e5-8bab-4daf-85d6-ba94009b1273" />
+                                    </ContainerBox.Content>
+                                </ContainerBox>
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="33a0608f-2052-490b-bae8-c83935cc2618">
+                            <Add.Item>
+                                <Title Id="3fd50680-3ab3-4e06-968e-de6653fad220" Panel.Bounds="152,206,5*{5,2147483647},5*{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="33a0608f-2052-490b-bae8-c83935cc2618">
+                            <Add.Item>
+                                <Title RichText="&lt;Run Foreground=&quot;#FFFFFFFF&quot; &gt;New Adventure Game&lt;/Run&gt;" FontFamily="Lucida Grande" Id="11432a97-23ad-4109-ac0a-ea187f46e712" Panel.Bounds="132,314,428{5,2147483647},47*{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="33a0608f-2052-490b-bae8-c83935cc2618">
+                            <Add.Item>
+                                <Label RichText="&lt;Run Foreground=&quot;#FDD7BC88&quot; &gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ex tortor, pharetra eu erat pellentesque, viverra blandit dui. Cras ut ipsum arcu. Integer eu porttitor libero.Paragraph&lt;/Run&gt;" Id="1243a68c-fd94-4d8a-bf50-5517116b7351" Panel.Bounds="132,368,424{5,2147483647},66{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="33a0608f-2052-490b-bae8-c83935cc2618">
+                            <Add.Item>
+                                <Label Id="6225f5d2-2dd4-4a71-9aae-03ea4f2eff0d" Panel.Bounds="122,280,5*{5,2147483647},5*{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="33a0608f-2052-490b-bae8-c83935cc2618">
+                            <Add.Item>
+                                <Button Text="FREE REGISTER" CornerRadius="8" FontFamily="Lucida Sans" Id="9b350fcb-9dce-4712-bce8-da81eca9e625" Panel.Bounds="132,443,140{5,2147483647},47{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="33a0608f-2052-490b-bae8-c83935cc2618">
+                            <Add.Item>
+                                <Ellipse Thickness="4" Id="53b89139-6cd9-4b0f-a452-d0b42964409f" Panel.Bounds="-215,38,178{5,2147483647},171{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="33a0608f-2052-490b-bae8-c83935cc2618">
+                            <Add.Item>
+                                <Image SourcePath="assets/Sci-Fi-Warrior-Transparent-PNG.png" Id="868eb724-29fe-4d3e-9c8b-5de7e8f1d12e" Panel.Bounds="581,269,350{5,2147483647},408{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="33a0608f-2052-490b-bae8-c83935cc2618">
+                            <Add.Item>
+                                <Rectangle CornerRadius="4" Background="#FE483525" Opacity="0.6" Id="3fe2b71e-6015-4590-a897-97ae1fdd4902" Panel.Bounds="53,38,947{5,2147483647},66{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="33a0608f-2052-490b-bae8-c83935cc2618">
+                            <Add.Item>
+                                <Title RichText="LOGO" FontSize="48" Id="18428f53-7e42-4810-90bf-1c1b538b9602" Panel.Bounds="478,125,136{5,2147483647},86{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="33a0608f-2052-490b-bae8-c83935cc2618">
+                            <Add.Item>
+                                <Image SourcePath="assets/Ghouleye_Divider.png" Id="17d21ce0-9f24-4a3f-8cd6-6a46f3425993" Panel.Bounds="326,154,424{5,2147483647},212{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="33a0608f-2052-490b-bae8-c83935cc2618">
+                            <Add.Item>
+                                <TextArea Text="username" Border="#FF564D45" Background="#FF564D45" Foreground="#FFF8A25B" FontFamily="Open Sans" Id="3dc3d7cf-3558-4d56-a514-c11394ac008b" Panel.Bounds="666,55,151{5,2147483647},31{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="33a0608f-2052-490b-bae8-c83935cc2618">
+                            <Add.Item>
+                                <TextArea Text="*************" Border="#FF564D45" Foreground="#FF000000" FontFamily="Open Sans" Id="c1e3dac2-4201-4545-aeb4-d8bd294c0229" Panel.Bounds="834,55,151{5,2147483647},31{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="33a0608f-2052-490b-bae8-c83935cc2618">
+                            <Add.Item>
+                                <Label RichText="Login:" FontFamily="Open Sans" Id="b4493d76-6266-47bc-98af-37c05ff0f8b4" Panel.Bounds="622,62,5*{5,2147483647},5*{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                    </KeyFrame.Operations>
+                </KeyFrame>
+            </Scene.KeyFrames>
+        </Scene>
+    </Page.Scenes>
+</Page>

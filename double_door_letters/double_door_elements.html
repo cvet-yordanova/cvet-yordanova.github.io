@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>LETTERS</title>
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+		
+		
+		<style>
+			p{
+				color:white;
+				font-family:Tahoma, sans-serif;
+				font-size: 1em;
+				font-weight: 700;
+			}
+			
+			p span {
+				display: inline-block;
+				position: relative;
+				transform-style: preserve-3d;
+				perspective: 500;		
+			
+			}
+			
+			p span::before,
+			p span::after{
+				display:none;
+				position: absolute;
+				top:0;
+				left: -1px;
+				transform-origin: left top;
+				transition: all 0.3s ease-out;
+				content: attr(data-text);
+			}
+			
+			p span::before{
+				z-index:1;
+				color:rgba(0, 0, 0, .2);
+				transform: scale(1.1, 1) skew(0deg, 20deg);
+			}
+			
+			p span::after{
+				z-index:2;
+				color: #684da3;
+				text-shadow: -1px 0 1px #684da3, 1px 0 1px rgba(0, 0, 0, 0.8);
+				transform: rotateY(-40deg);
+			}
+			
+			p span:hover::before{
+				transform: scale(1.1, 1) skew(0deg, 5deg);
+			}
+			
+			p span:hover::after{
+				transform: rotateY(-10deg);
+			}
+			
+			@media(min-width : 5em){
+				p{
+					font-size: 3em;
+				}
+				
+				p span::before, 
+				p span::after{
+					display: block;
+				}
+			}
+			
+			@media(min-width : 60em){
+				p{
+					font-size: 8em;
+				}
+			}
+			
+			@media(min-width : 120em){
+				p{
+					font-size: 1em;
+				}
+			}
+			
+			
+			
+				body{
+				background-color: #34495e;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				}
+				
+			html, body{
+				margin:0;
+				padding; 0;
+				height: 100%;
+			}	
+			
+			
+			
+			
+		</style>
+
+	</head>
+	<body>
+	
+		<p class="col-md-12 col-sm-12 col-lg-12 tex-center">
+			<span data-text="T">T</span>
+			<span data-text="S">S</span>
+			<span data-text="V">V</span>
+			<span data-text="E">E</span>
+			<span data-text="T">T</span>
+			<span data-text="E">E</span>
+			<span data-text="L">L</span>
+			<span data-text="I">I</span>
+			<span data-text="N">N</span>
+			<span data-text="A">A</span>
+		</p>
+	
+	
+	
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+	</body>
+</html>

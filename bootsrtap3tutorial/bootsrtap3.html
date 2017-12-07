@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+
+
+	<head>
+		<meta charset = "utf-8">
+		<title> App</title>
+		<meta name = "description" content= "WiredWiki App">
+		
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		
+		<style>
+			body {
+				padding-top =40px;
+			}
+		</style>
+
+	</head>
+	
+	
+	<body data-spy = "scroll" data-target = "my-navbar">
+	
+		<nav class = "navbar navbar-inverse navbar-fixed-top" id = "my-navbar">
+			<div class="container">
+				<div class = "navbar-header">
+					<button type = "button" class = "navbar-toggle" data-toggle = "collapse" data-target = "#navbar-collapse">
+						<span class = "icon-bar"></span>
+						<span class = "icon-bar"></span>
+						<span class = "icon-bar"></span>
+						<span class = "icon-bar"></span>
+					</button>
+					
+					<a href = "" class = "navbar-brand"> WiredWiki</a>
+				</div><!-- End Navbar Header-->
+				
+				<div class = "collapse navbar-collapse" id = "navbar-collapse">
+				
+				<a href = "" class = "btn btn-warning navbar-btn navbar-right">Download Now</a>
+					<ul class = "nav navbar-nav">
+						<li><a href = "#feedback">Feedback</a></li>
+						<li><a href = "#gallery">Gallery</a></li>
+						<li><a href = "#features">Features</a></li>
+						<li><a href = "#faq">Faq</a></li>
+						<li><a href = "#contact">Contacts</a></li>
+					</ul>
+				</div>
+			</div> <!--End Container-->
+		</nav> <!--End navbar-->
+	
+		<!--jumbotron-->
+	
+		<div class = "jumbotron">
+			<div class = "conatiner text-center">
+				<h1>Wired Wiki App</h1>
+				<p>Lorem ipsum dolor sit amet, consectutur adipiscing elit.Suspendisse consectetur sollicitudin felis feugiat ultricies</p>
+				
+				<div class= "btn-group">
+					<a href = "" class = "btn btn-lg btn-warning">Download App</a>
+					<a href = "" class = "btn btn-lg btn-default">Visit Store</a>
+					<a href = "" class = "btn btn-lg btn-warning">Spread the word</a>
+				</div>
+			</div> <!--End container-->
+		</div> <!--End of jumbotron-->
+	
+		<div class = "container">
+			<section>
+				<div class = "page-header" id = "feedback">
+					<h2>Feedback<small> Check out the awesome feedback</small></h2>
+				</div>
+				
+				<div class = "row">
+					<div class="col-lg-4">
+						<blockquote>
+							<p>Lorem ipsum dolor sit amet, consectutur adipiscing elit.Suspendisse consectetur sollicitudin felis feugiat ultricies</p>
+							<footer>John doe</footer>
+						</blockquote>
+					</div>
+					<div class="col-lg-4">
+						<blockquote>
+							<p>Lorem ipsum dolor sit amet, consectutur adipiscing elit.Suspendisse consectetur sollicitudin felis feugiat ultricies</p>
+							<footer>John doe</footer>
+						</blockquote>
+					</div>
+					<div class="col-lg-4">
+						<blockquote>
+							<p>Lorem ipsum dolor sit amet, consectutur adipiscing elit.Suspendisse consectetur sollicitudin felis feugiat ultricies</p>
+							<footer>John doe</footer>
+						</blockquote>
+					</div>
+				<div> <!--End container-->
+			</section>
+		</div> <!--End Container -->
+		
+		
+		<!--Call to action-->
+		<section>
+			<div class = "well">
+				<div class = "container text-center">
+					<h3>Subscribe for more free stuff</h3>
+					<p>Enter your name and email</p>
+					
+					<form action = "" class = "form-inline">
+						<div class = "form-group">
+							<label for = "subscription">Subscribe</label>
+							<input type = "text" class ="form-control" id ="subscription" id = "subscription" placeholder = "Your name" >
+						</div>
+						<div class = "form-group">
+							<label for = "email">Subscribe</label>
+							<input type = "text" class ="form-control" id ="subscription" id = "email" placeholder = "Enter your email" >
+						</div>
+						
+						<button type ="submit" class = "btn btn-warning" >Subscribe</button>
+						<hr>
+					</form>
+				</div <!--end container-->
+			</div> <!--Well-->
+		</section> <!--call to action-->
+		
+		<div class = "container">
+			<section>
+				<div class = "page-header" id = "gallery">
+					<h2> Gallery. <small> Check out the awesome gallery</small></h2>
+				</div>
+				
+				<div class = "carousel slide" id = "screenshot-carousel" data-ride = "carousel">
+					<ol class = "carousel-indicators">
+						<li data-target = "#screenshot-carousel" data-slide-to="0" class = "active"> </li>
+						<li data-target = "#screenshot-carousel" data-slide-to="1"></li>
+						<li data-target = "#screenshot-carousel" data-slide-to="2"></li>
+						<li data-target = "#screenshot-carousel" data-slide-to="3"></li>
+					</ol>
+					
+					<div class = "carousel-inner">
+						<div class = "item active"> 
+							<img src = "images/highway.jpg" alt = "text of the image">
+							<div class = "carousel-caption">
+								<h3>Highway heading</h3>
+								<p>This is the caption</p>
+							</div>
+						</div>
+						<div class = "item"> 
+							<img src = "images/river.jpg" alt = "text of the image">
+							<div class = "carousel-caption">
+								<h3>Highway heading</h3>
+								<p>This is the caption</p>
+							</div>
+						</div>
+						<div class = "item"> 
+							<img src = "images/street.jpg" alt = "text of the image">
+							<div class = "carousel-caption">
+								<h3>Highway heading</h3>
+								<p>This is the caption</p>
+							</div>
+						</div>
+						<div class = "item"> 
+							<img src = "images/painting.jpg" alt = "text of the image">
+							<div class = "carousel-caption">
+								<h3>Highway heading</h3>
+								<p>This is the caption</p>
+							</div>
+						</div>
+					</div> <!--End carouse inner-->
+					
+					<a href ="#screenshot-carousel" class = "left carousel-control" data-slide="prev"> <span class = "glyphicon glyphicon-chevron-left"></span>
+					</a>
+					
+					<a href ="#screenshot-carousel" class = "right carousel-control" data-slide="next"> <span class = "glyphicon glyphicon-chevron-right"></span>
+					</a>
+				</div> <!--END carousel-->
+			</section>
+		</div>
+		
+		<!--features-->
+
+		<div class = "container">
+			<section>
+				<div class = "page-header" id ="features" >
+				<h2>Features.<small>Cool features</small></h2>
+				</div>
+				
+				<div class = "row">
+					<div class = "col-lg-8">
+						<h3>
+						THIS IS HTE HEADING
+						</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
+					</div>
+					
+					<div class = "col-lg-4">
+						<img src = "images/imac.jpg" class = "img-responsive" alt = "image">
+					</div>
+				</div>
+				<div class = "row">
+					<div class = "col-lg-8">
+						<h3>
+						THIS IS HTE HEADING
+						</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
+					</div>
+					
+					<div class = "col-lg-4">
+						<img src = "images/smartphone.jpg" class = "img-responsive" alt = "image">
+					</div>
+				</div>
+				
+				<hr>
+				
+				<div class = "row">
+					<div class = "col-lg-4">
+						<div class = "panel panel-default text-center">
+							<div class ="panel-body" >
+								<span class = "glyphicon glyphicon-ok"></span>
+								<h4>this is hte heading
+								</h4>
+								<p>ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+					<div class = "col-lg-4">
+						<div class = "panel panel-default text-center">
+							<div class ="panel-body" >
+								<span class = "glyphicon glyphicon-star"></span>
+								<h4>this is hte heading
+								</h4>
+								<p>ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+					<div class = "col-lg-4">
+						<div class = "panel panel-default text-center">
+							<div class ="panel-body" >
+								<span class = "glyphicon glyphicon-play-circle"></span>
+								<h4>this is hte heading
+								</h4>
+								<p>ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+				</div> <!-- End row-->
+				
+			</section>
+		</div>  <!--End container-->
+		
+		<!--FAQ-->
+		
+		<div class = "container"> 
+			<section>
+				<div class = "page-header" id ="faq" >
+					<h2>Freqintly asked questions <small>Engaing with customers</small></h2>
+				</div> <!-- End page header-->
+				
+				<div class = "panel-group" id = "accordion">
+					<div class = "panel panel-default">
+						<div class = "panel-heading">
+							<div class = "panel-title">
+								<a href = "#collapse-1" data-toggle = "collapse" data-parent = "#accordion">
+								Qustion 1
+								</a>
+							</div> <!-- End panel title -->
+							<div id = "collapse-1" class = "panel-collapse collapse in">
+								<div class = "panel-body">
+									tion ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum do
+								</div>
+							</div> <!-- End pannel collapse-->
+						</div>
+					</div>
+					
+					
+					<div class = "panel panel-default">
+						<div class = "panel-heading">
+							<div class = "panel-title">
+								<a href = "#collapse-2" data-toggle = "collapse" data-parent = "#accordion">
+								Qustion 2
+								</a>
+							</div> <!-- End panel title -->
+							<div id = "collapse-2" class = "panel-collapse collapse">
+								<div class = "panel-body">
+									tion ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum do
+								</div>
+							</div> <!-- End pannel collapse-->
+						</div>
+					</div>
+					
+					<div class = "panel panel-default">
+						<div class = "panel-heading">
+							<div class = "panel-title">
+								<a href = "#collapse-3" data-toggle = "collapse" data-parent = "#accordion">
+								Qustion 3
+								</a>
+							</div> <!-- End panel title -->
+							<div id = "collapse-3" class = "panel-collapse collapse">
+								<div class = "panel-body">
+									tion ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum do
+								</div>
+							</div> <!-- End pannel collapse-->
+						</div>
+					</div>
+				</div> <!-- End panel group-->
+				
+			</section>
+		</div> <!--End container-->
+		
+		<!--Contact-->
+		
+		<div class = "container">
+			<section>
+				<div class = "page-header" id = "contact">
+					<h2>Contact us. <small>Contaxt us for more</small></h2>
+				</div> <!--End page header-->
+				
+				<div class = "row">
+					<div class = "col-lg-4">
+						<p>Send the message ,or contact us from the address below
+						</p>
+						
+						<address>
+							<strong>
+								Wiredwiki pvt ltd </br>
+							</strong>
+								111.malviya nagar </br>
+								Plot no. 45 </br>
+								New delhi - 110017 </br>
+							
+						</address>
+					</div>
+					
+					<div class = "col-lg-8">
+						<form action = "" class = "form-horizontal">
+							<div class = "form-group">
+								<label for = "user-name" class = "col-lg-2 control-label">
+								Name
+								</label>
+								<div class = "col-lg-10">
+									<input type="text" class = "form-control" id = " user-name" placeholder= "Enter your name">
+								</div>
+							</div> <!-- End form group-->
+							
+							<div class = "form-group">
+								<label for = "user-email" class = "col-lg-2 control-label">
+								Email
+								</label>
+								<div class = "col-lg-10">
+									<input type="text" class = "form-control" id = " user-email" placeholder= "Enter your email address">
+								</div>
+							</div> <!-- End form group-->
+							
+							<div class = "form-group">
+								<label for = "user-url" class = "col-lg-2 control-label">
+								Website
+								</label>
+								<div class = "col-lg-10">
+									<input type="text" class = "form-control" id = " user-url" placeholder= "Enter your name">
+								</div>
+							</div> <!-- End form group-->
+							
+							<div class = "form-group">
+								<label for = "user-message" class = "col-lg-2 control-label">
+								Message
+								</label>
+								<div class = "col-lg-10">
+									<textarea name = "user-message" class = "form-control "id = "user-message" cols = "20" rows = "10" placeholder = "Enter you message">
+									
+									</textarea>
+								</div>
+							</div> <!-- End form group-->
+							
+							<div class = "form-group">
+								<div class = "col-lg-10 col-lg-offset-2">
+									<button type = "submit" class = "btn btn-primary">Submit </button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div> <!-- end of row-->
+			</section>
+		</div>
+		
+		<!--Footer-->
+		
+		<footer>
+		<hr>
+			<div class = "container">
+				<div class = "container text-center">
+					<h3>Subscribe for more free stuff</h3>
+					<p>Enter your name and email</p>
+					
+					<form action = "" class = "form-inline">
+						<div class = "form-group">
+							<label for = "subscription">Subscribe</label>
+							<input type = "text" class ="form-control" id ="subscription" id = "subscription" placeholder = "Your name" >
+						</div>
+						<div class = "form-group">
+							<label for = "email">Subscribe</label>
+							<input type = "text" class ="form-control" id ="subscription" id = "email" placeholder = "Enter your email" >
+						</div>
+						
+						<button type ="submit" class = "btn btn-warning" >Subscribe</button>
+						
+					</form>
+					
+					<hr>
+					
+					<ul class = "list-inline">
+						<li> <a href = ""> Twitter</a></li>
+						<li> <a href = ""> Facebook</a></li>
+						<li> <a href = ""> Youtube</a></li>
+					</ul>
+					
+					<p>&copy: Copyright @ 2017</p>
+				</div <!--end container-->
+			</div>
+		</footer>																															
+	
+	
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	
+			<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	</body>
+</html>
