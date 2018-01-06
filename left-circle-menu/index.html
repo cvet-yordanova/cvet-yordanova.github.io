@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css"/>
+        <link rel="stylesheet" href="css/style.css" type="text/css"/>
+       
+    </head>
+    <body>
+        
+        <header>
+            <div class="container">
+                <h1 class="logo">Gerico<span>Logo</span></h1>
+                
+                <nav class="site-nav">
+                    <ul>
+                        <li><a  href=""><i class="fa fa-home site-nav--icon"></i>Home</a></li>
+                        <li><a  href=""><i class="fa fa-info site-nav--icon"></i>About</a></li>
+                        <li><a  href=""><i class="fa fa-pencil site-nav--icon"></i>Blog</a></li>
+                        <li><a  href=""><i class="fa fa-usd site-nav--icon"></i>Pricing</a></li>
+                        <li><a  href=""><i class="fa fa-envelope site-nav--icon"></i>Contact</a></li>
+                    
+                    </ul>
+                </nav>
+                
+                
+                <div class="menu-toggle" onclick="setTimeout(changeClassName(), 5000);">
+                    <div class="hamburger"></div>
+                </div>
+            </div>
+        
+        </header>
+        
+        <main>
+            <section class="heading-section">
+                <div class="heading">
+                    <h1>Lorem ipsum dolor sit amet</h1>
+                    <p>consectetur adipiscing elit. In rutrum viverra sollicitudin. Phasellus ornare augue metus, ac condimentum massa vestibulum sed.</p>
+                    
+                    <div class="buttons">
+                    <button class="btn-c btn-1">Button1 </button>
+                    <button class="btn-c btn-2">Button1 </button>
+                </div>
+                </div>
+                
+                
+                
+            </section>
+        
+        </main>
+        
+        <section class="row-images">
+            <div class="row-images-wrap">
+                <img class="row-image" src="images/heading-bg.jpg">
+                <img class="row-image" src="images/heading-bg.jpg">
+                <img class="row-image" src="images/heading-bg.jpg">
+                <img class="row-image" src="images/heading-bg.jpg">
+                <img class="row-image" src="images/heading-bg.jpg">
+                <img class="row-image" src="images/heading-bg.jpg">
+                <img class="row-image" src="images/heading-bg.jpg">
+           </div>
+        
+        </section>
+        
+        <hr>
+        
+        <section class="text-img">
+            
+            <div class="text-img-wrap">
+               
+            
+                <div class="text">
+                    <div class="img-wrap">
+                        <img src="images/heading-bg.jpg">
+                    </div>
+                    <h3>Eat strawberries!!!</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rutrum viverra sollicitudin. Phasellus ornare augue metus, ac condimentum massa vestibulum sed.</p>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rutrum viverra sollicitudin. Phasellus ornare augue metus, ac condimentum massa vestibulum sed. Praesent sollicitudin vestibulum bibendum. In mollis, urna blandit tristique lacinia, turpis metus tincidunt orci, non mollis nibh odio eget arcu.</p>
+                    <p> Quisque sodales vulputate nibh, ac placerat ante. Nulla eget justo vel tortor eleifend commodo vel quis tellus. Vivamus dignissim pharetra ante eget elementum.</p>
+                </div>
+            </div>
+        
+        </section>
+        
+        <script type="text/javascript">
+            var element = document.getElementsByClassName('site-nav')[0];
+            var element2 = document.getElementsByClassName('menu-toggle')[0];
+            
+            
+            function changeClassName(){
+                if(element.className === "site-nav"){
+                    element.className += " site-nav--open";
+                    element2.className += " menu-toggle--open";
+                }else {
+                    element.className = "site-nav";
+                    element2.className = "menu-toggle";
+                }
+            }
+            
+                    
+        </script>
+
+   
+        <footer>
+            <div class="wrap">
+                    <div class="footer-1">
+                        <ul>
+                            <li><a>Link1</a></li>
+                            <li><a>Link2</a></li>
+                            <li><a>Link2</a></li>
+                            <li><a>Link2</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-1">
+                        <ul>
+                            <li><a>Link1</a></li>
+                            <li><a>Link2</a></li>
+                            <li><a>Link2</a></li>
+                            <li><a>Link2</a></li>
+                        </ul>
+                    </div>
+                    <div class=" footer-icons">
+                        <ul>
+                            <a><i class="fa fa-facebook"></i></a>
+                            <a><i class="fa fa-twitter"></i></a>
+                            <a><i class="fa fa-instagram"></i></a>
+                        </ul>
+                    </div>
+                </div>
+        </footer>
+
+    </body>
+</html>
