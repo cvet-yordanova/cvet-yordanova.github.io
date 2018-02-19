@@ -6,6 +6,20 @@
     <meta charset="utf-8">
     <meta name="keywords" content="">
     
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+	<script>
+		$(function() {
+			$(".meter > span").each(function() {
+				$(this)
+					.data("origWidth", $(this).width())
+					.width(0)
+					.animate({
+						width: $(this).data("origWidth")
+					}, 1200);
+			});
+		});
+	</script>
+    
 <!--    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">-->
     <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
@@ -19,60 +33,106 @@
             <div class="header-inner">
                 <div class="container-c">
                     <div class="top-part">
-                        <div class="navigation-container">
-                            <nav class="navigation">
-                                <ul>
-                                    <li><div class="navigation-item"><i class="fab fa-angellist"></i><a>About me</a></div></li>
-                                    <li><div class="navigation-item"><i class="fas fa-th"></i><a>Portfolio</a></div></li>
-                                    <li><div class="navigation-item"><i class="fas fa-pencil-alt"></i><a>Blog</a></div></li>
-                                    <li><div class="navigation-item"><i class="far fa-calendar-check"></i><a>Personal Goals</a></div></li>
-                                </ul>
-                            </nav>
-                        </div>
-                    
-                    </div>
-                    
-                    <div class="presentation-c">
-                        <div class="title">
-                            <h2>#About me</h2>
-                        </div>
-                        
-                        <div class="presentation-inside">
-                            <div class="presentation-content">
-                                <div class="left-presentation">
-                                    <div class="image"><img src="img/profile.jpg" alt="profile-image"></div>
-                                    <div class="social-medias">
-                                        <ul>
-                                            <li><i class="fab fa-facebook-f"></i></li>
-                                            <li><i class="fab fa-skype"></i></li>
-                                            <li><i class="fab fa-github"></i></li>
-                                            <li><i class="fab fa-linkedin-in"></i></li>
-                                            <li><i class="fab fa-instagram"></i></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="right-presentation">
-                                    <div class="section-info">
-                                        <ul>
-                                            <li><h3>Name:</h3><p>Tsvetelina Yordanova</p></li>
-                                            <li><h3>Birth date:</h3><p>14th Jan, 1999.</p></li>
-                                            <li><h3>Interests:</h3><p>HTML5, CSS3, Java, Javascript </p></li>
-                                            <li><h3>Hobbies:</h3><p>Listening to music, Jogging</p></li>
-                                        </ul>
-                                   </div>
+                        <div class="top-part-c">
+                            <div class="left-box">
+                                <div class="main-title">
+                                    <h1>#Ts. Yordanova</h1>
+                                    <h3>Portfolio</h3>
                                 </div>
                             </div>
-                        </div>
+                            <div class="right-box">
+                                <div class="nav-c">
+                                    <nav class="navigation">
+                                        <div class="navbar-header">
+                                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                                <div class="icon-bar"></div>
+                                                <div class="icon-bar"></div>
+                                                <div class="icon-bar"></div>
+                                            </button>
+
+                                        </div>
+                                        <ul>
+                                            <li><div class="navigation-item"><i class="fab fa-angellist"></i><a>About me</a></div></li>
+                                            <li><div class="navigation-item"><i class="fas fa-th"></i><a>Portfolio</a></div></li>
+                                            <li><div class="navigation-item"><i class="fas fa-pencil-alt"></i><a>Blog</a></div></li>
+                                            <li><div class="navigation-item"><i class="far fa-calendar-check"></i><a>Personal Goals</a></div></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                       </div>
+                        <div class="letters"></div>
                     </div>
+                    
+
                 </div>
             </div>
         </div>
         
 <!--        Portfolio-->
-        <section class="portfolio">
+        <section class="about_me">
+            <div class="about_me_c">
+                <div class="content-box about-me-box">
+                    <div class="about-me-text-inner">
+                        <div class="about-me-text">
+                            <div class="info-label">
+                                <h3>Name:</h3>
+                                <p>Tsvetelina Yordanova</p>
+                            </div>
+                            <div class="info-label">
+                                <h3>Birth Date:</h3>
+                                <p>14th, Jan, 1999</p>
+                            </div>
+                            <div class="info-label">
+                                <h3>Hobbies:</h3>
+                                <p>#Sport, #Music</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-box about-me-title-box">
+                    <div class="about-me-title-c">
+                        <div class="photo-title">
+                            <img src="img/user.png" alt="user photo">
+                            <h2>#About me</h2>
+                        </div>
+                        
+                        <div class="social-c">
+                            <ul>
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-skype"></i></a></li>
+                                <li><a href="#"><i class="fab fa-github"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-box skills">
+                    <div class="skills-c">
+                        <span class="html"><h2>HTML</h2></span>
+                        <span class="css"><h2>CSS</h2></span>
+                        <span class="java"><h2>Java</h2></span>
+                        <span class="javascript"><h2>Javascript</h2></span>
+                    </div>
+                </div>
+                <div class="content-box skills-title">
+                    
+                    <h2>
+                        #Skills
+                    </h2>
+
+                </div>
+            </div>
             
-        
+             
         </section>
+        
+        <div class="letters portfolio-title">
+            <h2>Portfolio</h2>
+       </div>
+        <div class="portfolio-title-underline"></div>
+        
     
     </body>
 </html>
