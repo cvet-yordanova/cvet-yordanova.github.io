@@ -1,0 +1,126 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
+
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:700|Open+Sans:400,700');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+
+* {
+     border: 1px solid black;
+}
+
+ul, div, nav, label {
+    margin: 0px;
+    padding: 0px;
+   
+}
+
+body {
+    background: #927057;
+    color: #fff;
+    padding: 20px;
+}
+
+main {
+    width: 470px;
+    margin: 50px auto 0;
+    padding: 50px 60px 70px 60px;
+    background: #d5c395;
+    position: relative;
+}
+
+main::before {
+    position:absolute;
+    top: -30px;
+    left: 259px;
+    background: url('images/triangle.png') no-repeat 0 0;
+    display: block;
+    height: 35px;
+    width: 68px;
+    content: "";
+    
+
+}
+
+div.image-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+footer {
+    font-size: 1em;
+    color: #efe1c4;
+    text-align: center;
+}
+
+div.image-container img {
+    border: 5px solid #d5c395;
+    height: 123px;
+}
+
+input[type="password"],input[type="text"]  {
+    outline: none;
+    border: none;
+    background: #efe1c4;
+    padding: 10px 10px 10px 60px;
+    width: 85%;
+    font-size: 1.1em;
+    color: #927057;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+input[type="submit"] {
+    outline: none;
+    border: none;
+    background: #927057;
+    padding: 10px;
+    width: 100%;
+    font-size: 1.5em;
+    color: #d5c395;
+    border-radius: 5px;
+}
+
+div.input {
+    position: relative;
+}
+
+div.input i {
+    position: absolute;
+    left: 12px;
+    top: 11px;
+    width: 20px;
+    height: 20px;
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

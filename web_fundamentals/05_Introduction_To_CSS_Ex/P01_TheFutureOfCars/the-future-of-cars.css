@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+        
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/*HEADER*/
+
+header {
+    background-image: url(images/car-future.jpg);
+    background-size: cover;
+    height: 700px;
+}
+
+header h1 {
+    font-size: 80px;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 80px 0 0 20px;
+    font-weight: 900;
+    color: #b38575;
+    text-transform: uppercase;
+        
+}
+
+
+/*
+
+END HEADER*/
+
+/*NAVIGATION*/
+
+nav {
+    margin: 20px;
+     float: right;
+}
+
+header ul {
+    margin: 0;
+    padding: 7px;
+    height: 20px;
+    line-height: 20px;
+}
+
+nav li {
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+nav a {
+    color: #333;
+    padding: 5px 7px 10px 7px;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:link {
+    color: #333;
+    padding: 5px 7px 10px 7px;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:active {
+    color: #333;
+    padding: 5px 7px 10px 7px;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:visited {
+    color: #333;
+    padding: 5px 7px 10px 7px;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+nav a:hover {
+    color: #b38575;
+}
+
+
+
+/*END NAVIGATION*/
+
+/*MAIN*/
+
+section {
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: justify;
+    
+}
+
+article {
+    margin-bottom: 20px;
+}
+
+img {
+    max-width: 350px;
+    height: 260px;
+    margin-right: 15px;
+    float: left;
+}
+
+p {
+    font-size: 18px;
+    color: #333;
+    margin: 0px;
+    padding: 20px;
+}
+
+p::first-letter {
+    font-size: 32px;
+    color: #b38575;
+    font-style: bold;
+    text-transform: uppercase;
+}
+
+article h2 {
+    font-weight: 900;
+    color: #b38575;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.content article::after{
+    content: '';
+    display: block;
+    clear: both;
+    
+}
+
+
+/*END MAIN*/
+
+/*FOOTER*/
+
+footer {
+    background-color: #ccc;
+    text-align: center;
+}
+
+footer span {
+    display: block;
+    padding: 10px;
+    color: #333;
+}
+/*END FOOTER*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

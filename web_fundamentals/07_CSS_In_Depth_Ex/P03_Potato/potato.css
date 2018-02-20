@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 1px solid black;
+  
+}
+
+/*NAVIGATION*/
+
+/*
+nav .brand {
+    font-family: late, sans-serif;
+    color: #fff;
+    font-weight: 200px;
+    font-size: 2em;
+    margin: 3px 0 0 10px;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    background-color: #C0A991;
+    
+}
+
+nav p {
+    flex: 1;
+    align-content: flex-start;
+}
+
+nav .nav-primary {
+    align-content: flex-end;
+    color: #fff;
+}
+
+nav .nav-primary .nav-item {
+   
+    display: inline-block;
+    margin: 10px;
+    font-family: lato, sans-serif;
+    line-height: 20px;
+    text-decoration: none;
+    color: #fff;
+    text-decoration: #fff;
+   
+}
+*/
+
+/*HEADER*/
+
+header {
+    width: 100%;
+    text-align: center;
+    background: #C0A991;
+}
+
+header img {
+    width: 30%;
+}
+
+
+header .header-title {
+    font-weight: 100;
+    font-size: 2.2em;
+    font-family: lato;
+    text-transform: capitalize;
+    margin-top: 5%;
+    color: #fff;
+}
+
+header .header-subtitle {
+    font-weight: 100;
+    font-size: 1em;
+    font-family: lato;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    color: #fff;
+}
+
+/*FEATURES*/
+
+.features {
+    font-family: lato;
+    text-align: center;
+    background: url(images/potato-background.png);
+    background-size:cover;
+    background-position: center;
+    height: 100%;
+}
+
+.features .features-title {
+    margin-top: 11%;
+    font-weight: 100;
+    text-transform: capitalize;
+    
+}
+
+.features .features-subtitle {
+    font-weight: 100;
+    font-size: 1em;
+    font-family: lato;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    margin-left: 30%;
+    margin-right: 30%;
+    
+}
+
+.feature-potatoes {
+    width: 20%;
+    margin-bottom: 10%;
+}
+
+
+/*BUY POTATO*/
+
+.potato-types {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.potato-types .potato-img {
+    width: 220px;
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
