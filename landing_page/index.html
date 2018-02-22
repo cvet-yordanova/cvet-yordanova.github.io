@@ -7,6 +7,7 @@
     <meta name="keywords" content="">
     
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
 	<script>
 		$(function() {
 			$(".meter > span").each(function() {
@@ -29,6 +30,7 @@
 </head>
     
     <body>
+        
         <div class="header-out">
             <div class="header-inner">
                 <div class="container-c">
@@ -44,19 +46,21 @@
                                 <div class="nav-c">
                                     <nav class="navigation">
                                         <div class="navbar-header">
-                                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                            <button type="button" class="navbar-toggle collapsed toggleBtn" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" onclick="toggleMenu(this)">
                                                 <div class="icon-bar"></div>
                                                 <div class="icon-bar"></div>
                                                 <div class="icon-bar"></div>
                                             </button>
 
                                         </div>
-                                        <ul>
-                                            <li><div class="navigation-item"><i class="fab fa-angellist"></i><a>About me</a></div></li>
-                                            <li><div class="navigation-item"><i class="fas fa-th"></i><a>Portfolio</a></div></li>
-                                            <li><div class="navigation-item"><i class="fas fa-pencil-alt"></i><a>Blog</a></div></li>
-                                            <li><div class="navigation-item"><i class="far fa-calendar-check"></i><a>Personal Goals</a></div></li>
-                                        </ul>
+                                        <div class="menu" id="menu">
+                                            <ul>
+                                                <li><div class="navigation-item"><i class="fab fa-angellist"></i><a>About me</a></div></li>
+                                                <li><div class="navigation-item"><i class="fas fa-th"></i><a>Portfolio</a></div></li>
+                                                <li><div class="navigation-item"><i class="fas fa-pencil-alt"></i><a>Blog</a></div></li>
+                                                <li><div class="navigation-item"><i class="far fa-calendar-check"></i><a>Personal Goals</a></div></li>
+                                            </ul>
+                                        </div>
                                     </nav>
                                 </div>
                             </div>

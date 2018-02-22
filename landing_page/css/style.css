@@ -134,11 +134,6 @@ left-box
     color: white;
 }
 
-/*TODO*/
-.right-box .navigation ul {
-    display: none;
-}
-
 .nav-c {
     position: relative;
 }
@@ -163,6 +158,7 @@ left-box
     background: #d63152;
     box-shadow: none;
     border-radius: 1px;
+    transition: 0.3s transform ease-in;
 }
 
 .navigation button .icon-bar+.icon-bar {
@@ -350,6 +346,93 @@ left-box
     box-shadow: 3px -9px 39px 1px rgba(0,0,0,0.75);
     z-index: 1;
 }
+
+
+
+/*//////////////////////////////// HAMBURGER MENU*/
+
+.navigation .toggleBtn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 5;
+    cursor: pointer;
+    background: green;
+}
+
+.navigation .toggleBtn.active div:nth-child(2) {
+    opacity: 0;
+}
+
+.navigation .toggleBtn.active div:nth-child(1) {
+    transform: rotate(10deg) translateY(11px) translateX(2px);
+}
+
+.navigation .toggleBtn.active div:nth-child(3) {
+    transform: rotate(-9deg) translateY(-13px) translateX(2px);
+}
+
+.navigation .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+}
+
+.menu:before,.menu:after {
+    content:"";
+    position: absolute;
+    top: 0px;
+    width: 0vw;
+    height: 100vh;
+    transition: all 200ms ease-in-out;
+    background: green;
+}
+
+.menu:before {
+    left: 0px;
+}
+
+.menu::after {
+    right: 0px;
+}
+
+.menu.active::before,.menu.active::after{
+    width: 50vw;
+}
+
+.navigation .menu ul {
+    position: absolute;
+    top: -100%;
+/*    top: 50%;*/
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+    transition: all 300ms ease-in-out 400ms;
+}
+
+.navigation .menu ul li {
+    list-style: none;
+    font-size: 45px;
+    margin: 5px 0px;
+    color: #fff;
+}
+
+.navigation .menu.active ul {
+    top: 50%;
+}
+
+
+
+
+
+
+
+
+
 
 
 
