@@ -1,0 +1,445 @@
+/*reset code*/
+
+@import url('https://fonts.googleapis.com/css?family=Anton');
+@import url('https://fonts.googleapis.com/css?family=Anton|Bowlby+One|Cabin+Sketch|Julius+Sans+One|Monoton');
+@import url('https://fonts.googleapis.com/css?family=Cabin+Sketch');
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+    background: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body a {
+    transition: 0.5s all;
+    text-decoration: none;
+}
+
+body a:hover {
+    text-decoration: none;
+}
+
+body a:focus, a:hover {
+    text-decoration: none;
+}
+
+input[type="button"], input[type="submit"] {
+    transition: 0.5s all;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    
+}
+
+p {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+    width: 100%;
+}
+
+a:focus, a:hover {
+    text-decoration: none;
+    outline: none;
+}
+
+/*#D63152;*/
+/*#0a0908*/
+
+/*reset-code*/
+
+* {
+/*    border: 1px solid black;   */
+}
+
+
+/*    clip-path: polygon(0 0, 100% 0, 100% 95vh, 0 100%)*/
+
+/*TOP PART*/
+
+/*
+
+left-box
+*/
+
+.top-part-c {
+    width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: 5px 5px 7px rgba(1, 1, 1, .4);
+    background: #0c0401;
+}
+
+.left-box {
+    width:50vw;
+    position: relative;
+    background: #d63152;
+    height: 85vh;
+    padding-right: 20px;
+}
+
+.left-box .main-title {
+    position: absolute;
+    color: #75f4b5;
+    top: 50%;
+    left: 30%;
+    margin: 0;
+    text-align: right;
+}
+
+.left-box .main-title h1{
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 1.5px;
+    font-size: 4rem;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px rgba(1, 1, 1, .2);
+    margin: 0;
+}
+
+.left-box .main-title h3 {
+    font-family: 'Julius Sans One', sans-serif;
+    top: 70%;
+    left: 50%;
+    font-size: 2rem;
+    letter-spacing: 1rem;
+    margin-right: -2rem;
+}
+
+
+/*RIGHT-BOX*/
+
+.right-box {
+    height: 85vh;
+    background: url(../img/top-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    color: white;
+}
+
+.nav-c {
+    position: relative;
+}
+
+
+.navigation button {
+    position: fixed;
+    right: 50px;
+    top: 30px;
+    padding: 4px;
+    background: #260126;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 3px;
+    z-index: 1000;
+}
+
+.navigation button .icon-bar {
+    width: 150px;
+    height: 6px;
+    background: #d63152;
+    box-shadow: none;
+    border-radius: 1px;
+    transition: 0.3s transform ease-in;
+}
+
+.navigation button .icon-bar+.icon-bar {
+    margin-top: 6px;
+}
+
+.letters {
+    height: 15vh;
+    background: linear-gradient(to right bottom, rgba(1, 1, 1, 0.4), rgba(1, 1, 1, 0.4)), url(../img/leters.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/*END TOP PART*/
+
+.about_me_c {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: -2px -8px 30px -2px rgba(0,0,0,0.67);
+    
+}
+
+.content-box {
+    width: 49vw;
+    box-sizing: border-box;
+    height: 50vh;
+    position: relative;
+   
+}
+
+.content-box.about-me-box {
+    background: #000;
+    border-left: 15px solid #cc0066;
+    padding-left: 5px;
+}
+
+.content-box.about-me-box .about-me-text-inner {
+    height: 50vh;
+}
+
+.about-me-text-inner {
+    border-left: 3px solid #cc0066;;
+}
+
+.about-me-text {
+    width: 50%;
+    color: #cc0066;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.about-me-text h3 {
+    font-size: 1.5rem;
+}
+
+.about-me-text .info-label{
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(117, 244, 181, .6);
+    position: 
+}
+
+.content-box.about-me-title-box {
+    background: #d63152;
+    text-align: center;
+    border-bottom: 5px solid #e10052;
+}
+
+.content-box .social-c {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.content-box .social-c ul {
+    display: flex;
+}
+
+
+.content-box .photo-title img {
+    width: 100px;
+}
+
+.photo-title {
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translateX(-50%)
+    
+}
+
+.photo-title h2 {
+    margin-top: 1rem;
+      font-family: 'Anton', sans-serif;
+    letter-spacing: 0.6rem;
+    font-size: 2rem;
+    
+}
+
+.about-me-title-box .social-c ul li {
+    display: inline-block;
+    list-style: none;
+    border-right: 4px solid #d63152;
+    width:25%;
+    background: #ec6b76;
+    line-height: 3rem;
+    cursor: pointer;
+    transition: 0.2s all ease-in-out;
+}
+
+.about-me-title-box .social-c ul li:hover {
+    background: #ec9ba2;
+}
+
+.about-me-title-box .social-c ul li i  {
+    font-size: 2rem;
+    line-height: 3rem;
+    color: #331919;
+}
+
+.content-box.skills {
+    background: #d63152;
+}
+
+.content-box .skills-c {
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content-box .skills-c span {
+    display: inline-block;
+    padding: 10px;
+}
+
+.content-box.skills-title {
+    background: #0c0502;
+}
+
+.content-box.skills-title h2 {
+    font-family: 'Cabin Sketch', cursive;
+    color: #d5798d;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    text-underline-position: right; 
+}
+
+.portfolio-title {
+    text-align: right;
+    height: 30vh;
+    position: relative;
+    padding-bottom: 0;
+    z-index: 0;
+}
+
+.portfolio-title h2 {
+    position: absolute;
+    left: 95%;
+    top: 75%;
+    transform: translate(-100%, -60%);
+    font-family: 'Anton', sans-serif;
+    font-size: 5rem;
+    padding-top: 4rem;
+    margin-right: 2rem;
+    letter-spacing: 1rem;
+    color: #e10052;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    line-height: 5rem;
+    z-index: 2;
+    text-shadow: 3px -7px 8px rgba(0, 0, 0, 1);
+}
+
+.portfolio-title-underline {
+    height: 1.8rem;
+    background: #e10052;
+    margin-top: -0.7rem;
+    box-shadow: 3px -9px 39px 1px rgba(0,0,0,0.75);
+    z-index: 1;
+}
+
+
+
+/*//////////////////////////////// HAMBURGER MENU*/
+
+.navigation .toggleBtn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 5;
+    cursor: pointer;
+    background: green;
+}
+
+.navigation .toggleBtn.active div:nth-child(2) {
+    opacity: 0;
+}
+
+.navigation .toggleBtn.active div:nth-child(1) {
+    transform: rotate(10deg) translateY(11px) translateX(2px);
+}
+
+.navigation .toggleBtn.active div:nth-child(3) {
+    transform: rotate(-9deg) translateY(-13px) translateX(2px);
+}
+
+.navigation .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+}
+
+.menu:before,.menu:after {
+    content:"";
+    position: absolute;
+    top: 0px;
+    width: 0vw;
+    height: 100vh;
+    transition: all 200ms ease-in-out;
+    background: green;
+}
+
+.menu:before {
+    left: 0px;
+}
+
+.menu::after {
+    right: 0px;
+}
+
+.menu.active::before,.menu.active::after{
+    width: 50vw;
+}
+
+.navigation .menu ul {
+    position: absolute;
+    top: -100%;
+/*    top: 50%;*/
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+    transition: all 300ms ease-in-out 400ms;
+}
+
+.navigation .menu ul li {
+    list-style: none;
+    font-size: 45px;
+    margin: 5px 0px;
+    color: #fff;
+}
+
+.navigation .menu.active ul {
+    top: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
