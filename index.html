@@ -1,113 +1,145 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>Transparent Login Form</title>
-		<link rel="stylesheet">
-	</head>
-	<body>
-		<div class="loginBox">
-			<img height="60px" src="user.png" class="user">
-			<h2>Log In Here</h2>
-			<form>
-				<p>Email</p>
-				<input type="text" name="" placeholder="Enter Email">
-				<p>Password</p>
-				<input type="password" name="" placeholder="********">
-				<input type="submit" name="" value="Sign In">
-				<a href="cardFlip.html">Forget Password</a>
-			</form>
-		</div>
-		<a href="food_tut/index.html">Food page</a>
-		<a href="flying_letters/flying_letters.html">Flying letters</a>
-		<a href="game/land_page.html">Flying letters</a>
-	</body>
+<head>
+    <title>Tsvetelina Yordanova</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
+	<script>
+		$(function() {
+			$(".meter > span").each(function() {
+				$(this)
+					.data("origWidth", $(this).width())
+					.width(0)
+					.animate({
+						width: $(this).data("origWidth")
+					}, 1200);
+			});
+		});
+	</script>
+    
+<!--    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">-->
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+   <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    
+    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+
+</head>
+    
+    <body>
+        
+        <div class="header-out">
+            <div class="header-inner">
+                <div class="container-c">
+                    <div class="top-part">
+                        <div class="top-part-c">
+                            <div class="left-box">
+                                <div class="main-title">
+                                    <h1>#Ts. Yordanova</h1>
+                                    <h3>Portfolio</h3>
+                                </div>
+                            </div>
+                            <div class="right-box">
+                                <div class="nav-c">
+                                    <nav class="navigation">
+                                        <div class="navbar-header">
+                                            <button type="button" class="navbar-toggle collapsed toggleBtn" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" onclick="toggleMenu(this)">
+                                                <div class="icon-bar"></div>
+                                                <div class="icon-bar"></div>
+                                                <div class="icon-bar"></div>
+                                            </button>
+
+                                        </div>
+                                        <div class="menu" id="menu">
+                                            <ul>
+                                                <li><div class="navigation-item"><i class="fab fa-angellist"></i><a>About me</a></div></li>
+                                                <li><div class="navigation-item"><i class="fas fa-th"></i><a>Portfolio</a></div></li>
+                                                <li><div class="navigation-item"><i class="fas fa-pencil-alt"></i><a>Blog</a></div></li>
+                                                <li><div class="navigation-item"><i class="far fa-calendar-check"></i><a>Personal Goals</a></div></li>
+                                            </ul>
+                                        </div>
+                                    </nav>
+                                </div>
+                            </div>
+                       </div>
+                        <div class="letters"></div>
+                    </div>
+                    
+
+                </div>
+            </div>
+        </div>
+        
+<!--        Portfolio-->
+        <section class="about_me">
+            <div class="about_me_c">
+                <div class="content-box about-me-box">
+                    <div class="about-me-text-inner">
+                        <div class="about-me-text">
+                            <div class="info-label">
+                                <h3>Name:</h3>
+                                <p>Tsvetelina Yordanova</p>
+                            </div>
+                            <div class="info-label">
+                                <h3>Birth Date:</h3>
+                                <p>14th, Jan, 1999</p>
+                            </div>
+                            <div class="info-label">
+                                <h3>Hobbies:</h3>
+                                <p>#Sport, #Music</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-box about-me-title-box">
+                    <div class="about-me-title-c">
+                        <div class="photo-title">
+                            <img src="img/user.png" alt="user photo">
+                            <h2>#About me</h2>
+                        </div>
+                        
+                        <div class="social-c">
+                            <ul>
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-skype"></i></a></li>
+                                <li><a href="#"><i class="fab fa-github"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-box skills">
+                    <div class="skills-c">
+                        <span class="html"><h2>HTML</h2></span>
+                        <span class="css"><h2>CSS</h2></span>
+                        <span class="java"><h2>Java</h2></span>
+                        <span class="javascript"><h2>Javascript</h2></span>
+                    </div>
+                </div>
+                <div class="content-box skills-title">
+                    
+                    <h2>
+                        #Skills
+                    </h2>
+
+                </div>
+            </div>
+            
+             
+        </section>
+        
+        <div class="letters portfolio-title">
+            <h2>Portfolio</h2>
+       </div>
+        <div class="portfolio-title-underline"></div>
+        
+    
+    </body>
 </html>
-<style>
-	body{
-		margin:0;
-		padding:0;
-		background: url(transparent_login_bg.jpg);
-		background-position:center;
-		background-size: cover;
-		font-family: sans-serif;
-	}
-	.loginBox{
-		position:absolute;
-		background: rgba(0,0,0,.5);
-		top:50%;
-		left:50%;
-		transform: translate(-50%, -50%);
-		width:350px;
-		height:420px;
-		padding:80px 40px;
-		box-sizing: border-box;
-		border-radius:5px;
-	}
-	.user{
-		width: 100px;
-		height: 100px;
-		border-radius: 50%;
-		overflow: hidden;
-		position: absolute;
-		top: calc(-100px / 2);
-		left: calc(50% - 50px);
-		background-color:white;
-		opacity:0.5;
-	}
-	h2{
-		margin:0;
-		padding:0 0 20px;
-		color:#efed40;
-		text-align:center;
-	}
-	.loginBox p{
-		margin: 0;
-		padding:0;
-		font-weight: bold;
-		color:#fff;
-	}
-	.loginBox input{
-		width: 100%;
-		margin-bottom:20px;
-	}
-	.loginBox input[type="text"],
-	.loginBox input[type="password"]{
-	border: none;
-	border-bottom:1px solid #fff;
-	background: transparent;
-	outline: none;
-	height: 40px;
-	color: #fff;
-	font-size: 16px;
-	}
-	::placeholder{
-		color: rgba(255, 255, 255, .5)
-	}
-	.loginBox input[type="submit"]{
-		border: none;
-		outline:none;
-		height: 40px;
-		color: #fff;
-		font-size: 16px;
-		background: #ff267e;
-		cursor: pointer;
-		border-radius: 20px;
-	}
-	.loginBox input[type="submit"]:hover{
-		background: #efed40;
-		color: #262626;
-		transition: 0.5s ease;
-	}
-	.loginBox a{
-		color: #fff;
-		font-size: 14px;
-		font-weight: bold;
-		text-decoration: none;
-	}
-	
-	
-</style>
 
 
 
