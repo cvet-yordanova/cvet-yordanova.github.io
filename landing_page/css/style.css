@@ -357,7 +357,6 @@ left-box
     right: 20px;
     z-index: 5;
     cursor: pointer;
-    background: green;
 }
 
 .navigation .toggleBtn.active div:nth-child(2) {
@@ -378,7 +377,12 @@ left-box
     left: 0;
     width: 100vw;
     height: 100vh;
-    z-index: 2;
+    z-index: -1;
+   
+}
+
+.navigation .menu.active {
+    z-index: 1;
 }
 
 .menu:before,.menu:after {
@@ -388,7 +392,7 @@ left-box
     width: 0vw;
     height: 100vh;
     transition: all 200ms ease-in-out;
-    background: green;
+    background: #e10052;
 }
 
 .menu:before {
@@ -406,7 +410,6 @@ left-box
 .navigation .menu ul {
     position: absolute;
     top: -100%;
-/*    top: 50%;*/
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -417,9 +420,21 @@ left-box
 .navigation .menu ul li {
     list-style: none;
     font-size: 45px;
-    margin: 5px 0px;
+    margin: 30px 0px;
     color: #fff;
+    cursor: pointer;
 }
+
+.navigation .menu ul li:after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 10%;
+    margin: auto;
+    margin-top: 15px;
+    background: #75f4b5;
+}
+
 
 .navigation .menu.active ul {
     top: 50%;
@@ -428,6 +443,40 @@ left-box
 
 
 
+/* ////////////////////////////////////PORTFOLIO */
+
+.portfolio-outer {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 0 10px;
+}
+
+.portfolio-c {
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+.portfolio-outer .portfolio-site-card {
+    margin: 10px;
+    display: inline-block;
+    
+    box-shadow: 0px 1px 3px rgba(1, 1, 1, .4);
+}
+
+.portfolio-outer .portfolio-site-card figure {
+    margin: 0;
+}
+
+
+/* /////////////////////////////////FOOTER */
+
+footer {
+    background: #0c0401;
+    height: 30vh;
+    margin-top: 4vh;
+}
 
 
 
