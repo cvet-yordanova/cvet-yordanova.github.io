@@ -64,9 +64,9 @@ a:focus, a:hover {
 
 /*reset-code*/
 
-* {
+/* * { */
 /*    border: 1px solid black;   */
-}
+/* } */
 
 
 /*    clip-path: polygon(0 0, 100% 0, 100% 95vh, 0 100%)*/
@@ -78,21 +78,9 @@ a:focus, a:hover {
 left-box
 */
 
-.top-part-c {
-    width: 100%;
-    position: relative;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    box-shadow: 5px 5px 7px rgba(1, 1, 1, .4);
-    background: #0c0401;
-}
 
-.left-box {
-    width:50vw;
-    position: relative;
-    background: #d63152;
+.header .content-box {
     height: 85vh;
-    padding-right: 20px;
 }
 
 .left-box .main-title {
@@ -120,12 +108,14 @@ left-box
     font-size: 2rem;
     letter-spacing: 1rem;
     margin-right: -2rem;
+    box-sizing: border-box;
 }
 
 
 /*RIGHT-BOX*/
 
 .right-box {
+    box-sizing: border-box;
     height: 85vh;
     background: url(../img/top-bg.jpg);
     background-repeat: no-repeat;
@@ -175,28 +165,33 @@ left-box
 
 /*END TOP PART*/
 
-.about_me_c {
+.about_me  .half-screen {
+    height: 50vh;
+
+}
+
+/* .about_me_c {
     display: grid;
     grid-template-columns: 1fr 1fr;
     box-shadow: -2px -8px 30px -2px rgba(0,0,0,0.67);
     
-}
+} */
 
-.content-box {
+/* .content-box {
     width: 49vw;
     box-sizing: border-box;
     height: 50vh;
     position: relative;
    
-}
+} */
 
-.content-box.about-me-box {
+.about_me  .half-screen.about-me-box {
     background: #000;
     border-left: 15px solid #cc0066;
     padding-left: 5px;
 }
 
-.content-box.about-me-box .about-me-text-inner {
+.about_me  .half-screen.about-me-box .about-me-text-inner {
     height: 50vh;
 }
 
@@ -217,22 +212,21 @@ left-box
     font-size: 1.5rem;
 }
 
-.about-me-text .info-label{
+.about-me-text .info-label {
     margin-bottom: 10px;
     border-bottom: 1px solid rgba(117, 244, 181, .6);
-    position: 
 }
 
-.content-box.about-me-title-box {
+.about_me  .half-screen.about-me-title-box {
     background: #d63152;
     text-align: center;
     border-bottom: 5px solid #e10052;
 }
 
-.content-box .social-c {
+.about_me .about-me-title-box .social-c {
     position: absolute;
     bottom: 0;
-    width: 100%;
+    width: 60%;
 }
 
 .content-box .social-c ul {
@@ -240,7 +234,7 @@ left-box
 }
 
 
-.content-box .photo-title img {
+.about-me-title-box .photo-title img {
     width: 100px;
 }
 
@@ -254,7 +248,7 @@ left-box
 
 .photo-title h2 {
     margin-top: 1rem;
-      font-family: 'Anton', sans-serif;
+    font-family: 'Anton', sans-serif;
     letter-spacing: 0.6rem;
     font-size: 2rem;
     
@@ -281,28 +275,27 @@ left-box
     color: #331919;
 }
 
-.content-box.skills {
+.half-screen.skills {
     background: #d63152;
 }
 
-.content-box .skills-c {
-    width: 70%;
-    position: absolute;
+.half-screen .skills-c {
+   position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.content-box .skills-c span {
+.half-screen .skills-c span {
     display: inline-block;
     padding: 10px;
 }
 
-.content-box.skills-title {
+.half-screen.skills-title {
     background: #0c0502;
 }
 
-.content-box.skills-title h2 {
+.about-me-title-box.skills-title h2 {
     font-family: 'Cabin Sketch', cursive;
     color: #d5798d;
     position: absolute;
@@ -323,7 +316,7 @@ left-box
 
 .portfolio-title h2 {
     position: absolute;
-    left: 95%;
+    /* left: 95%; */
     top: 75%;
     transform: translate(-100%, -60%);
     font-family: 'Anton', sans-serif;
@@ -446,7 +439,7 @@ left-box
 /* ////////////////////////////////////PORTFOLIO */
 
 .portfolio-outer {
-    width: 100%;
+    /* width: 100%; */
     margin-top: 30px;
     margin-bottom: 30px;
     padding: 0 10px;
@@ -479,7 +472,68 @@ footer {
 }
 
 
+/* //////////////////////////////////////////////BOOTSTRAP GRIDD */
 
+
+
+.half-screen {
+    position: relative;
+    min-height: 1px;
+    flex-basis: 0;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+
+.half-screen::before, .half-screen::after {
+    display: table;
+    content: " ";
+}
+
+.content-box {
+    display: flex;
+    flex-wrap: wrap;
+    background: white;
+    box-sizing: border-box;
+}
+
+.content-box::before, .content-box::after {
+    display: table;
+    content: " ";
+}
+
+.content-box:after {
+    clear: both;
+}
+
+/* @media (min-width: 768px) {
+    .content-box {
+      width: 100%;
+    }
+  }
+  @media (min-width: 992px) {
+    .content-box {
+      width: 100%;
+    }
+
+    .half-screen {
+        float: left;
+        width: 50%;
+    }
+
+
+  }
+  @media (min-width: 1200px) {
+    .content-box {
+      width: 1170px;
+    }
+  } */
 
 
 
