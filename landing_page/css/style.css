@@ -78,6 +78,14 @@ a:focus, a:hover {
 left-box
 */
 
+.left-box {
+    height: 70vh;
+}
+
+.right-box {
+    height: 0px;
+}
+
 
 .header .content-box {
     height: 85vh;
@@ -88,7 +96,7 @@ left-box
     color: #75f4b5;
     top: 50%;
     left: 30%;
-    margin: 0;
+    margin-right: 5%;
     text-align: right;
 }
 
@@ -101,10 +109,30 @@ left-box
     margin: 0;
 }
 
+@media (max-width: 900px) {
+    .left-box .main-title h1 {
+        font-size: 2rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .left-box .main-title h1 {
+        font-size: 2rem;
+        margin-bottom: 4px;
+    }
+    
+    .header .content-box {
+        height: 70vh;
+    }
+
+    .right-box {
+        display: none;
+    }
+}
+
 .left-box .main-title h3 {
     font-family: 'Julius Sans One', sans-serif;
-    top: 70%;
-    left: 50%;
     font-size: 2rem;
     letter-spacing: 1rem;
     margin-right: -2rem;
@@ -155,8 +183,20 @@ left-box
     margin-top: 6px;
 }
 
+@media (max-width: 768px) {
+    .navigation button .icon-bar {
+        width: 100px;
+        height: 4px;
+    }
+
+    .navigation button .icon-bar+.icon-bar {
+        margin-top: 4px;
+    }
+}
+
 .letters {
     height: 15vh;
+    background: #000;
     background: linear-gradient(to right bottom, rgba(1, 1, 1, 0.4), rgba(1, 1, 1, 0.4)), url(../img/leters.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -170,30 +210,15 @@ left-box
 
 }
 
-/* .about_me_c {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    box-shadow: -2px -8px 30px -2px rgba(0,0,0,0.67);
-    
-} */
-
-/* .content-box {
-    width: 49vw;
-    box-sizing: border-box;
-    height: 50vh;
-    position: relative;
-   
-} */
-
 .about_me  .half-screen.about-me-box {
     background: #000;
     border-left: 15px solid #cc0066;
     padding-left: 5px;
 }
 
-.about_me  .half-screen.about-me-box .about-me-text-inner {
+/* .about_me  .half-screen.about-me-box .about-me-text-inner {
     height: 50vh;
-}
+} */
 
 .about-me-text-inner {
     border-left: 3px solid #cc0066;;
@@ -212,6 +237,12 @@ left-box
     font-size: 1.5rem;
 }
 
+@media (max-width: 800px) {
+    .about-me-text h3 {
+        font-size: 1rem;
+    }
+}
+
 .about-me-text .info-label {
     margin-bottom: 10px;
     border-bottom: 1px solid rgba(117, 244, 181, .6);
@@ -226,13 +257,18 @@ left-box
 .about_me .about-me-title-box .social-c {
     position: absolute;
     bottom: 0;
-    width: 60%;
+    padding: 0;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #d5798d;
 }
 
-.content-box .social-c ul {
+.social-c ul {
     display: flex;
+    background: #75f4b5;
+  
 }
-
 
 .about-me-title-box .photo-title img {
     width: 100px;
@@ -253,6 +289,7 @@ left-box
     font-size: 2rem;
     
 }
+
 
 .about-me-title-box .social-c ul li {
     display: inline-block;
@@ -295,7 +332,7 @@ left-box
     background: #0c0502;
 }
 
-.about-me-title-box.skills-title h2 {
+.skills-title h2 {
     font-family: 'Cabin Sketch', cursive;
     color: #d5798d;
     position: absolute;
@@ -306,39 +343,8 @@ left-box
     text-underline-position: right; 
 }
 
-.portfolio-title {
-    text-align: right;
-    height: 30vh;
-    position: relative;
-    padding-bottom: 0;
-    z-index: 0;
-}
+/* //////////////////////////////////////////////////////PORTFOLIO */
 
-.portfolio-title h2 {
-    position: absolute;
-    /* left: 95%; */
-    top: 75%;
-    transform: translate(-100%, -60%);
-    font-family: 'Anton', sans-serif;
-    font-size: 5rem;
-    padding-top: 4rem;
-    margin-right: 2rem;
-    letter-spacing: 1rem;
-    color: #e10052;
-    padding-bottom: 0;
-    margin-bottom: 0;
-    line-height: 5rem;
-    z-index: 2;
-    text-shadow: 3px -7px 8px rgba(0, 0, 0, 1);
-}
-
-.portfolio-title-underline {
-    height: 1.8rem;
-    background: #e10052;
-    margin-top: -0.7rem;
-    box-shadow: 3px -9px 39px 1px rgba(0,0,0,0.75);
-    z-index: 1;
-}
 
 
 
@@ -364,18 +370,36 @@ left-box
     transform: rotate(-9deg) translateY(-13px) translateX(2px);
 }
 
+
+@media (max-width: 768px) {
+    .navigation .toggleBtn.active div:nth-child(1) {
+        transform: rotate(10deg) translateY(7px) translateX(2px);
+    }
+    
+    .navigation .toggleBtn.active div:nth-child(3) {
+        transform: rotate(-9deg) translateY(-9px) translateX(2px);
+    }
+    
+}
+
 .navigation .menu {
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    z-index: -1;
+    z-index: 4;
+    transition: display 2s all ease-in-out;
+    display: none;
    
 }
 
 .navigation .menu.active {
-    z-index: 1;
+     display: block;
+} 
+
+.navigation .menu.active {
+    /* z-index: 1; */
 }
 
 .menu:before,.menu:after {
@@ -396,12 +420,17 @@ left-box
     right: 0px;
 }
 
+.menu::before,.menu::after {
+    display: none;
+}
+
 .menu.active::before,.menu.active::after{
+    display: block;
     width: 50vw;
 }
 
 .navigation .menu ul {
-    position: absolute;
+    position: fixed;
     top: -100%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -416,6 +445,13 @@ left-box
     margin: 30px 0px;
     color: #fff;
     cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .navigation .menu ul li {
+        font-size: 30px;
+        margin: 20px 0px;
+    }
 }
 
 .navigation .menu ul li:after {
@@ -439,7 +475,6 @@ left-box
 /* ////////////////////////////////////PORTFOLIO */
 
 .portfolio-outer {
-    /* width: 100%; */
     margin-top: 30px;
     margin-bottom: 30px;
     padding: 0 10px;
@@ -478,14 +513,14 @@ footer {
 
 .half-screen {
     position: relative;
+    flex: 1;
     min-height: 1px;
     flex-basis: 0;
     -webkit-box-flex: 1;
     -ms-flex-positive: 1;
     flex-grow: 1;
     position: relative;
-    width: 100%;
-    min-height: 1px;
+    /* width: 100%; */
     padding-right: 15px;
     padding-left: 15px;
     box-sizing: border-box;
@@ -496,10 +531,15 @@ footer {
     content: " ";
 }
 
+@media (min-width: 768px) {
+   .content-box{ 
+       display: flex;
+   }
+}
+
 .content-box {
-    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    background: white;
     box-sizing: border-box;
 }
 
@@ -512,28 +552,6 @@ footer {
     clear: both;
 }
 
-/* @media (min-width: 768px) {
-    .content-box {
-      width: 100%;
-    }
-  }
-  @media (min-width: 992px) {
-    .content-box {
-      width: 100%;
-    }
-
-    .half-screen {
-        float: left;
-        width: 50%;
-    }
-
-
-  }
-  @media (min-width: 1200px) {
-    .content-box {
-      width: 1170px;
-    }
-  } */
 
 
 
