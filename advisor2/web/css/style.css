@@ -1205,6 +1205,9 @@ div#stats h3.heading-agileinfo {
 		padding: 40px 80px;
 	}
 }
+
+
+/* /////////////////////////////////////////////////// */
 @media screen and (max-width: 1080px){
 	.w3ls-text h3, .w3ls-text h2 {
 		font-size: 3em;
