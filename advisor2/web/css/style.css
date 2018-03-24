@@ -78,7 +78,7 @@ a:focus, a:hover {
 .banner .header {
     padding: 2em 0;
 }
-.header-left{
+.header-left {
 	float: left;
 }
 .w3layouts-logo h1 a {
@@ -87,9 +87,11 @@ a:focus, a:hover {
     text-transform: uppercase;
     text-decoration: none;
 }
-.agileinfo-social-grids{
+
+.agileinfo-social-grids {
     float: right;
 }
+
 .agileinfo-social-grids ul {
     padding: 0;
     margin: 0;
@@ -163,7 +165,7 @@ a:focus, a:hover {
     margin: 0 1em;
     float: none;
 }
-.top-nav ul li:first-child{
+.top-nav ul li:first-child {
 	margin-left:0;
 }
 .top-nav ul li:nth-child(7){
@@ -174,7 +176,7 @@ a:focus, a:hover {
     border-right: solid 1px #EFEFEF;
     box-shadow: 1px 0px 0px 0px rgba(72, 72, 72, 0);
 }
-.top-nav ul li a{
+.top-nav ul li a {
 	color: #fff !important;
     font-size: 17px;
     margin: 0;
