@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <link rel="stylesheet" href="../css/bootstrap.css" type="text/css" media="all">
+    <script type="text/javascript" src="../js/bootstrap.js"></script>
     <!-- <link rel="stylesheet" href="../css/font-awesome.min.css" /> -->
 
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
@@ -92,29 +93,36 @@
         <div class="container">
             <div class="col-md-4 w3ls-left">
                 <!-- <div class="figure"> -->
-                <img src="./images/3.jpg" class="img-responsive">
+                <div class="block">
+                    <img src="./images/3.jpg" class="img-responsive">
+                </div>
                 <!-- </div> -->
             </div>
-            <div class="col-md-4 contact-card w3ls-left">
-                <i class="fas fa-compass"></i>
-                <div class="info">
-                    <div class="address">
-                        <p>
-                            <i class="fas fa-map-marker"></i>5200 Павликени, ул "Гоце Делчев" 7</p>
-                    </div>
-                    <div class="phone">
-                        <p>
-                            <i class="fas fa-phone-square"></i>тел./факс:0610/55 535, GSM:0889 281 600</p>
-                    </div>
-                    <div class="email">
-                        <p>
-                            <i class="fas fa-envelope"></i>e-mail:info@parkhotel-bora.com</p>
+            <div class="col-md-4 w3ls-left">
+               
+                <div class="block contact-card ">
+                    <i class="fas fa-compass"></i>
+                    <div class="info">
+                        <div class="address">
+                            <p>
+                                <i class="fas fa-map-marker"></i>5200 Павликени, ул "Гоце Делчев" 7</p>
+                        </div>
+                        <div class="phone">
+                            <p>
+                                <i class="fas fa-phone-square"></i>тел./факс:0610/55 535, GSM:0889 281 600</p>
+                        </div>
+                        <div class="email">
+                            <p>
+                                <i class="fas fa-envelope"></i>e-mail:info@parkhotel-bora.com</p>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 w3ls-left">
-                <div class="figure">
-                    <img src="./images/4.jpg">
+                <div class="block">
+                    <div class="figure">
+                        <img src="./images/4.jpg">
+                    </div>
                 </div>
             </div>
         </div>
@@ -126,7 +134,7 @@
         </h2>
         <div class="container">
 
-            <div class="col-md-9 col-sm-9 col-xs-12">
+            <div class="col-md-9">
                 <div class="content">
                     <div class="info">
                         <div class="about-us-title">
@@ -145,7 +153,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 col-sm-9 col-xs-12">
+            <div class="col-md-3 col-sm-12">
                 <img src="./images/sky-pic.jpg">
                 <img src="./images/borova-gorichka.jpg">
             </div>
@@ -283,23 +291,23 @@
     <script src="../js/jquery-2.1.4.min.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYOHcAsnPec4zWNYnFFH5hKsUIag0lkAw&callback=initMap"
         type="text/javascript"></script>
-        <script src="../js/move-top.js"></script>
+    <script src="../js/move-top.js"></script>
 
-        <script type="text/javascript">
-            $(document).ready(function () {
-                /*
-                    var defaults = {
-                    containerID: 'toTop', // fading element id
-                    containerHoverID: 'toTopHover', // fading element hover id
-                    scrollSpeed: 1200,
-                    easingType: 'linear' 
-                    };
-                */
-    
-                $().UItoTop({ easingType: 'easeOutQuart' });
-    
-            });
-        </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            /*
+                var defaults = {
+                containerID: 'toTop', // fading element id
+                containerHoverID: 'toTopHover', // fading element hover id
+                scrollSpeed: 1200,
+                easingType: 'linear' 
+                };
+            */
+
+            $().UItoTop({ easingType: 'easeOutQuart' });
+
+        });
+    </script>
 </body>
 
 </html>

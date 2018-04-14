@@ -4,99 +4,218 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/style.css" rel="stylesheet">
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
-    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-    <script type="text/javascript" src="./js/script.js"></script>
+    <link rel="stylesheet" href="style/bootstrap.css">
+    <link rel="stylesheet" href="style/custom-style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
     <title></title>
 </head>
 
 <body>
-    <nav class="navigation">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed toggleBtn" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
-                onclick="toggleMenu(this)">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-
-        </div>
-        <div class="menu" id="menu">
-            <ul>
-                <li>
-                    <div class="navigation-item">
-                        <i class="fab fa-angellist"></i>
-                        <a>About me</a>
-                    </div>
-                </li>
-                <li>
-                    <div class="navigation-item">
-                        <i class="fas fa-th"></i>
-                        <a>Portfolio</a>
-                    </div>
-                </li>
-                <li>
-                    <div class="navigation-item">
-                        <i class="fas fa-pencil-alt"></i>
-                        <a>Blog</a>
-                    </div>
-                </li>
-                <li>
-                    <div class="navigation-item">
-                        <i class="far fa-calendar-check"></i>
-                        <a>Personal Goals</a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <section class="header">
-	<a href="advisor2/web/index2.html" >link linnk link test test</a>
+    <header id="header">
         <div class="container">
-            <div class="one-half ">
-                <div class="title-row">
-                    <div class="title-box">
-                        <h1>Ts. Yordanova</h1>
-                        <h3>Portfolio</h3>
+            <div class="agileits_w3layouts_nav">
+                <div id="toggle_m_nav">
+                    <div id="m_nav_menu" class="m_nav">
+                        <div class="m_nav_ham w3_agileits_ham" id="m_ham_1"></div>
+                        <div class="m_nav_ham" id="m_ham_2"></div>
+                        <div class="m_nav_ham" id="m_ham_3"></div>
                     </div>
+
+                </div>
+                <div id="m_nav_container" class="m_nav wthree_bg">
+                    <nav class="menu menu--sebastian">
+                        <ul id="m_nav_list" class="m_nav menu__list">
+                            <li class="m_nav_item menu__item menu__item--current" id="m_nav_item_1">
+                                <a href="index.html" class="menu__link" id="home-b"> Home </a>
+                            </li>
+                            <li class="m_nav_item menu__item" id="m_nav_item_2">
+                                <a href="index.html" class="menu__link" id="portfolio-b"> Portfolio </a>
+                            </li>
+                            <li class="m_nav_item menu__item" id="moble_nav_item_3">
+                                <a href="about.html" class="menu__link" id="blog-b"> Blog </a>
+                            </li>
+                            <li class="m_nav_item menu__item" id="moble_nav_item_4">
+                                <a href="services.html" class="menu__link" id="gallery-b">Gallery</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
-            <div class="one-half">
-
-            </div>
         </div>
-        <div class="letters"></div>
-    </section>
-    <section class="portfolio">
+    </header>
+    <div class="presentation-box">
         <div class="container">
-            <div class="about-me-box one-half">
-                <div class="about-me-text-inner">
-                    <div class="about-me-text">
-                        <div class="info-label">
-                            <h3>Name:</h3>
-                            <p>Tsvetelina Yordanova</p>
-                        </div>
-                        <div class="info-label">
-                            <h3>Birth Date:</h3>
-                            <p>14th, Jan, 1999</p>
-                        </div>
-                        <div class="info-label">
-                            <h3>Hobbies:</h3>
-                            <p>#Sport, #Music</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-md-3 picture">
+                <img src="img/profile.jpg" alt="">
             </div>
-            <div class="one-half">
-                <div class="about-me-title-c">
-                    <div class="photo-title">
-                        <img src="./img/user.png" alt="user photo">
-                        <h2>#About me</h2>
-                    </div>
-
-                    <div class="social-c">
+            <div class="col-md-9 presentation-c">
+                <h2 class="dec-circle">#About me</h2>
+                <div class="presentation-i">
+                    <h1>Tsvetelina Yordanova</h1>
+                    <p>#Something #really #smart #here</p>
+                    <div class="social-medias">
                         <ul>
+                            <li>
+                                <i class="fab fa-facebook-square"></i>
+                            </li>
+                            <li>
+                                <i class="fab fa-github-square"></i>
+                            </li>
+                            <li>
+                                <i class="fab fa-youtube"></i>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <section id="skills">
+        <div class="container">
+            <div class="skills">
+                <span class="skills-tag-HTML">HTML</span>
+                <span class="skills-tag-CSS">CSS</span>
+                <span class="skills-tag-JavaScript">JavaScript</span>
+                <span class="skills-tag-Bootsrap">Bootsrap</span>
+                <span class="skills-tag-Photoshop">Photoshop</span>
+                <span class="skills-tag-Jquery">Jquery</span>
+                <span class="skills-tag-Java">Java</span>
+                <span class="skills-tag-Spring">Spring</span>
+                <span class="skills-tag-MySql">MySql</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+            <div class="container" id="grid_container">
+    
+    
+                <div class="col-md-4 col-sm-4">
+                    <div class="portfolio-item">
+                        <!-- <div class="title">
+                            <h2>Double Door Letters</h2>
+                        </div> -->
+                        <div class="portfolio-img-item">
+                            <a href="#">
+                                <img src="./img/double-door-letters.png">
+                                <h2>Double Door Letters</h2>
+                            </a>
+                        </div>
+                        <div class="portfolio-item-info">
+                            <section class="description">
+                                Interesting hover effect with pure CSS. Learnt from youtube tutorial.
+                            </section>
+                            <section class="footer">
+                                <div class="colors">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <span class="date">
+                                    10thMar2018
+                                </span>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="portfolio-img-item">
+                            <a href="#">
+                                <img src="./img/double-door-letters.png">
+                            </a>
+                        </div>
+                        <div class="portfolio-item-info">
+                            <section class="header">
+                                <h3>Title</h3>
+                            </section>
+                            <section class="description">
+                                Interesting hover effect with pure CSS. Learnt from youtube tutorial.
+                            </section>
+                            <section class="footer">
+                                <div class="colors">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <span class="date">
+                                    10thMar2018
+                                </span>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-md-4 col-sm-4">
+                    <div>
+                        <h2>
+                            Portfolio
+                        </h2>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="portfolio-img-item">
+                            <a href="#">
+                                <img src="./img/example.png">
+                            </a>
+                        </div>
+                        <div class="portfolio-item-info">
+                            <section class="header">
+                                <h3>Title</h3>
+                            </section>
+                            <section class="footer">
+                                <div class="colors">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <span class="date">
+                                    10thMar2018
+                                </span>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-md-4 col-sm-4">
+                    <div class="portfolio-item">
+                        <div class="portfolio-img-item">
+                            <a href="#">
+                                <img src="./img/example.png">
+                            </a>
+                        </div>
+                        <div class="portfolio-item-info">
+                            <section class="header">
+                                <h3>Title</h3>
+                            </section>
+                            <section class="footer">
+                                <div class="colors">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <span class="date">
+                                    10thMar2018
+                                </span>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+    
+    
+            </div>
+        </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-c">
+                <section class="links">
+                    <div class="col-md-6 col-sm-6">
+                        <ul class="social-footer">
                             <li>
                                 <a href="#">
                                     <i class="fab fa-facebook-f"></i>
@@ -124,108 +243,30 @@
                             </li>
                         </ul>
                     </div>
-                </div>
+                    <div class="col-md-6 col-sm-6">
+                        <ul class="site-links">
+                            <li>
+                                <a>#About me |</a>
+                            </li>
+                            <li>
+                                <a>#Portfolio |</a>
+                            </li>
+                            <li>
+                                <a>#Blog |</a>
+                            </li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="one-third"></div>
+                </section>
+                <!-- <section class="copyright">
+                                <p>&copy; All rights reserved to Tsvetelinka 2018</p>
+                            </section> -->
             </div>
-            <div class="kl" style="width: 100% !important"></div>
-            <div class="skills one-half">
-                <div class="skills-c">
-                    <span class="html">
-                        <h2>HTML</h2>
-                    </span>
-                    <span class="css">
-                        <h2>CSS</h2>
-                    </span>
-                    <span class="java">
-                        <h2>Java</h2>
-                    </span>
-                    <span class="javascript">
-                        <h2>Javascript</h2>
-                    </span>
-                </div>
-            </div>
-            <div class="skills-title one-half">
-
-                <div class="skills-title-c">
-                    <i class="fas fa-code"></i>
-                    <h2>
-                        Skills
-                    </h2>
-                </div>
-
-            </div>
-        </div>
-        </div>
-    </section>
-    <div class="letters"></div>
-
-    <section class="map">
-        <div id="map" style="height: 50vh; width: 100%"></div>
-    </section>
-
-    <footer>
-        <div class="footer-c">
-            <section class="links">
-                <div class="one-half">
-                    <ul class="social-footer">
-                        <li>
-                            <a href="#">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fab fa-skype"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="one-half">
-                    <ul class="site-links">
-                        <li><a>#About me |</a></li>
-                        <li><a>#Portfolio |</a></li>
-                        <li><a>#Blog |</a></li>
-                        <li></li>
-                    </ul>
-                </div>
-                <div class="one-third"></div>
-            </section>
-            <!-- <section class="copyright">
-                <p>&copy; All rights reserved to Tsvetelinka 2018</p>
-            </section> -->
         </div>
     </footer>
-
-    <script>
-        function initMap() {
-            var uluru = { lat: 43.238733, lng: 25.306592 };
-            var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 4,
-                center: uluru
-            });
-            var marker = new google.maps.Marker({
-                position: uluru,
-                map: map
-            });
-        }
-    </script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYOHcAsnPec4zWNYnFFH5hKsUIag0lkAw&callback=initMap"
-        type="text/javascript"></script>
-
 </body>
+
+<script src="./js/script.js"></script>
 
 </html>

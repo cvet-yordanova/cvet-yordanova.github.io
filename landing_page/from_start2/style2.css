@@ -368,13 +368,13 @@
 .my-portfolio {
     padding: 90px 0;
     /* background: #000; */
-    background: #DA4453;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #89216B, #DA4453);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #89216B, #DA4453); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* background: #DA4453; 
+    background: -webkit-linear-gradient(to right, #89216B, #DA4453);
+    background: linear-gradient(to right, #89216B, #DA4453);  */
 }
 
 .my-portfolio .container {
-    width: 90%;
+    width: 65%;
     margin: auto;
     display: flex;
     /* border-radius: 5px; */  
@@ -629,7 +629,7 @@
 
  @supports (-webkit-background-clip: text) {
     .navigation .menu ul  {
-        background: linear-gradient(to right, #89216B, #DA4453); 
+        /* background: linear-gradient(to right, #89216B, #DA4453);  */
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }

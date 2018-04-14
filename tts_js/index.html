@@ -10,10 +10,41 @@
 </head>
 
 <body>
-    <textarea rows="" class="form-control" id="text"></textarea>
+
+	<div class="content">
+		<textarea rows="" class="form-control" id="text"></textarea>
     <br>
 
     <button type="button" class="btn btn-primary btn-lg" id="speak">Speak</button>
+	</div>
+    
+	
+	<style>
+		.content {
+			width: 80% !important;
+			margin: auto;
+			margin-top: 10%;
+		}
+		
+		textarea {
+			font-size: 40px !important;
+			background: rgba(255, 255, 255, .8) !important;
+		}
+		
+		button:focus, button:hover, button:active, textarea {
+			outline: none !important;
+			box-shadow: none !important;
+		}
+		
+		button {
+			border-radius: none !important;
+			
+		}
+		
+		body {
+		background: url(http://walldiskpaper.com/wp-content/uploads/2014/11/Purple-Wallpaper-Vintage-Wall.jpg)
+		}
+	</style>
 
 
     <script>

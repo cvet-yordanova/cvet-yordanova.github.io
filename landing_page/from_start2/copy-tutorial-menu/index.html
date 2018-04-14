@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
+    <title></title>
+</head>
+
+<body>
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed toggleBtn" id="button">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+
+    </div>
+    <div class="menu" id="menu">
+        <ul>
+            <li>
+                <div class="navigation-item">
+                    <i class="fab fa-angellist"></i>
+                    <a>About me</a>
+                </div>
+            </li>
+            <li>
+                <div class="navigation-item">
+                    <i class="fas fa-th"></i>
+                    <a>Portfolio</a>
+                </div>
+            </li>
+            <li>
+                <div class="navigation-item">
+                    <i class="fas fa-pencil-alt"></i>
+                    <a>Blog</a>
+                </div>
+            </li>
+            <li>
+                <div class="navigation-item">
+                    <i class="far fa-calendar-check"></i>
+                    <a>Personal Goals</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+
+<style>
+
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    button {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        padding: 4px;
+        background: #260126;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        border-radius: 3px;
+        z-index: 1000;
+    }
+
+    button span {
+        display: block;
+        width: 150px;
+        height: 6px;
+        background: #8d3673;
+        box-shadow: none;
+        border-radius: 1px;
+        transition: 0.3s transform ease-in;
+
+    }
+
+    button span+span {
+        margin-top: 6px;
+    }
+
+    button.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    button.active span:nth-child(1) {
+        transform: rotate(10deg) translateY(11px) translateX(2px);
+    }
+
+    button.active span:nth-child(3) {
+        transform: rotate(-9deg) translateY(-13px) translateX(2px);
+    }
+
+    .menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 0px;
+        height: 100%;
+        z-index: 1;
+        transition: display 2s all ease-in-out;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+
+    .menu.active {
+        width: 100%;
+    }
+
+    .menu ul {
+    display: block;
+    position: fixed;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    width: 100%;
+    margin-top: 10%;
+    text-align: center;
+    z-index: 2;
+    transition: all 5s ease-in-out;
+    line-height: 70px;
+    color:  rgb(158, 51, 128);
+    font-size: 32px;
+    text-transform: uppercase;
+    list-style: none;
+}
+
+.menu ul li {
+    list-style: none;
+    font-size: 45px;
+    margin: 30px 0px;
+    cursor: pointer;
+    transition: .2s all ease-in-out;
+}
+
+.menu .navigation-item i {
+    color: rgb(158, 51, 128);
+    transition: .2s all ease-in-out;
+}
+
+.menu.active li:hover i{
+    transform: rotate(-14deg);
+    color: #ac6497;
+}
+
+.menu.active ul li:hover {
+    color: #ac6497;
+}
+
+@media (max-width: 768px) {
+    .menu ul li {
+        font-size: 30px;
+        margin: 10px 0px;
+    }
+}
+
+@media (max-width: 768px) {
+    button.active span:nth-child(1) {
+        transform: rotate(10deg) translateY(7px) translateX(2px);
+    }
+    
+    button.active span:nth-child(3) {
+        transform: rotate(-9deg) translateY(-9px) translateX(2px);
+    }
+    
+}
+
+</style>
+
+<script>
+
+    (function menuExpand() {
+        let button = document.getElementById('button');
+        let menu = document.getElementById('menu');
+        button.addEventListener('click', toggleMenu);
+
+        function toggleMenu() {
+            button.classList.toggle('active');
+            menu.classList.toggle('active');
+        }
+    })();
+
+</script>
+
+</html>
