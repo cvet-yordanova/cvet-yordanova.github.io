@@ -110,7 +110,7 @@ header {
 .presentation-c .dec-circle {
     /* display: block; */
     position: absolute;
-    color: rgba(255, 255, 255, .08);
+    color: rgba(255, 255, 255, .15);
     /* width: 300px;
     height: 300px; */
     font-size: 6em;
@@ -719,6 +719,319 @@ footer .container col-sm-6 ul{
     font-weight: 600;
     border-radius: 4px;
 }
+
+
+/* responsiveness */
+
+
+@media screen and (max-width: 1600px) {}
+
+@media screen and (max-width: 1440px) {
+    #m_nav_menu {
+        right: 9.3%;
+    }
+    .m_nav_item {
+        margin: 0 1.5em;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    #m_nav_menu {
+        right: 7%;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+
+}
+
+@media screen and (max-width: 1080px) {
+    #m_nav_menu {
+        right: 5%;
+    }
+
+    .presentation-c .dec-circle {
+        font-size: 1em;
+    }
+
+    .presentation-box .container {
+        width: 80% !important;
+    }
+
+}
+
+@media screen and (max-width: 1050px) {
+
+    /* .presentation-c {
+       padding-left: 20px !important;
+    }
+
+    .presentation-box .col-md-3 {
+        padding: 0 !important;
+        margin-right: 15px;
+        text-align: center;
+    } */
+
+    #skills {
+        width: 100%;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    #skills .container {
+        width: 90%;
+    }
+
+    .presentation-c .dec-circle {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #m_nav_menu {
+        right: 2.5%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    #m_nav_menu {
+        right: 12%;
+    }
+    #m_nav_menu {
+        top: 3%;
+    }
+    .m_nav_item {
+        margin: 0 0.8em;
+    }
+
+    #skills {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #skills .container {
+        width: 95%;
+    }
+
+    .presentation-c {
+        text-align: center;
+    }
+
+    .presentation-c h1 {
+        padding-top: .9em;
+        font-size: 3.3em;
+        font-weight: 500;
+        margin-bottom: 10px;
+        color: #000;
+    }
+
+    .presentation-box .container {
+        width: 100% !important;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    #m_nav_menu {
+        right: 8%;
+    }
+    #m_nav_container {
+        text-align: left;
+    }
+    .m_nav_item {
+        margin: 0 0.5em 0 2em;
+    }
+    #m_nav_container {
+        width: 100%;
+        height: 76px;
+    } 
+
+    header {
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #m_nav_menu {
+        right: 3%;
+    }
+    #m_nav_menu {
+        top: 3%;
+    }
+    .m_nav_item {
+        margin: 0 0.5em 0 1.5em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .m_nav_item {
+        margin: 0 0.5em 0 1.3em;
+    }
+
+    #skills {
+        padding: 40px 5px;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    #m_nav_menu {
+        right: 1%;
+    }
+    .m_nav_item {
+        margin: 0 0.5em 0 1.1em;
+    }
+}
+
+@media screen and (max-width: 667px) {
+    .m_nav_item {
+        margin: 0 0 0 1.3em;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .m_nav_item {
+        margin: 0 0 0 1em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #m_nav_list {
+        margin: 0 auto;
+        width: 70%;
+        padding: 2.2em 0 1em;
+    }
+    #m_nav_container {
+        height: auto;
+    }
+    .m_nav_item {
+        display: block;
+        text-align: center;
+        margin: 0 0 10px;
+    }
+
+    .presentation-c h1 {
+        padding-top: .4em;
+        font-size: 3em;
+        font-weight: 500;
+        margin-bottom: 10px;
+        color: #000;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .skills-tag-HTML {
+        font-size: 22px;
+        padding: 9px;
+        color: #fff;
+        background: #000;
+    }
+    
+    .skills-tag-CSS {
+        font-size: 23px;
+        padding: 9px;
+        color: #000;
+        background: #fff;
+        border: 10px solid #000;
+        font-weight: 600;
+        border-radius: 4px;
+    }
+    
+    .skills-tag-JavaScript {
+        font-size: 17px;
+        padding: 9px;
+        color: #000;
+        background: #fff;
+        border: 6px solid #000;
+        font-weight: 600;  
+    }
+    
+    .skills-tag-Bootsrap {
+        font-size: 12px;
+        padding: 9px;
+        color: #fff;
+        background: #000;
+        border: 6px solid #000;
+        font-weight: 600;  
+    }
+    
+    .skills-tag-Photoshop {
+        font-size: 12px;
+        padding: 9px;
+        color: #000;
+        background: #fff;
+        border: 3px solid #000;
+        font-weight: 600;  
+    }
+    
+    .skills-tag-Jquery {
+        font-size: 12px;
+        padding: 9px;
+        color: #000;
+        background: #fff;
+        border: 3px solid #000;
+        font-weight: 400; 
+        border-radius: 20px; 
+    }
+    
+    .skills-tag-Java {
+        font-size: 9px;
+        padding: 3px;
+        color: #fff;
+        background: #000;
+        border: 3px solid #000;
+        font-weight: 400;  
+    }
+    
+    .skills-tag-Spring {
+        font-size: 9px;
+        padding: 3px;
+        color: #000;
+        background: #fff;
+        border: 3px solid #000;
+        font-weight: 400;   
+    }
+    
+    .skills-tag-MySql {
+        font-size: 9px;
+        padding: 3px;
+        color: #000;
+        background: #fff;
+        border: 3px solid #000;
+        font-weight: 600;
+        border-radius: 4px;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+    #m_nav_menu {
+        top: 2%;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    #m_nav_menu {
+        right: 2%;
+    }
+
+    #m_nav_menu {
+        top: 1.5%;
+    }
+}
+
+@media screen and (max-width: 384px) {
+   
+}
+
+@media screen and (max-width: 375px) {
+
+}
+
+@media screen and (max-width: 320px) {
+
+}
+
 
 
 
