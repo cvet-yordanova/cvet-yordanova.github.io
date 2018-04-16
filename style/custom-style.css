@@ -1004,6 +1004,19 @@ footer .container col-sm-6 ul{
     
 }
 
+/* gallery */
+
+#gallery {
+    padding: 5em 0em;
+}
+
+.gallery-item {
+    background: #000;
+    margin-bottom: 20px;
+}
+
+/* end gallery */
+
 @media screen and (max-width: 480px) {
     #m_nav_menu {
         top: 2%;
