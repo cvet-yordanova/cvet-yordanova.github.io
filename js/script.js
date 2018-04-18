@@ -1,3 +1,63 @@
+// function retrieveMyUploads() {
+//     var results = YouTube.Channels.list('contentDetails', {mine: true});
+  
+//     for(var i in results.items) {
+//       var item = results.items[i];
+//       // Get the playlist ID, which is nested in contentDetails, as described in the
+//       // Channel resource: https://developers.google.com/youtube/v3/docs/channels
+//       var playlistId = item.contentDetails.relatedPlaylists.uploads;
+  
+//       var nextPageToken = '';
+  
+//       // This loop retrieves a set of playlist items and checks the nextPageToken in the
+//       // response to determine whether the list contains additional items. It repeats that process
+//       // until it has retrieved all of the items in the list.
+//       while (nextPageToken != null) {
+//         var playlistResponse = YouTube.PlaylistItems.list('snippet', {
+//           playlistId: playlistId,
+//           maxResults: 25,
+//           pageToken: nextPageToken
+//         });
+  
+//         for (var j = 0; j < playlistResponse.items.length; j++) {
+//           var playlistItem = playlistResponse.items[j];
+//           Logger.log('[%s] Title: %s',
+//                      playlistItem.snippet.resourceId.videoId,
+//                      playlistItem.snippet.title);
+  
+//         }
+//         nextPageToken = playlistResponse.nextPageToken;
+//       }
+//     }
+//   }
+  
+
+
+
+// (function youtubeApi() {
+
+//     console.log('hi');
+//     let key = "AIzaSyDFdBJXSnRm5UknY-Mjy2xwG3WhCdr4SFc";
+//     let channelName = 'OmegaWeb';
+
+//     $.get(
+//         "https://www.googleapis.com/youtube/v3/search", {
+//             part: 'snippet',
+//             channelId:'UCCmQSX_HVkesaKM2DJPTVSg',
+//             type: 'video',
+//             key: 'AIzaSyDFdBJXSnRm5UknY-Mjy2xwG3WhCdr4SFc',
+//             function(data){
+//                 console.log(data);
+//                 $.each(data.items, function(i, item){
+//                     console.log(item);
+//                 })
+//             }
+//         }
+//     )
+
+// })()
+
+
 (function navigationLinks() {
     let homeButton = document.getElementById("home-b");
     let portfolioButton = document.getElementById("portfolio-b");
@@ -55,7 +115,6 @@
     }
 
 })();
-
 
 
 

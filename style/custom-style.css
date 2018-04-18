@@ -139,20 +139,85 @@ header {
 
 /* social icons */
 
-.presentation-i .social-medias {
-    margin-bottom: 10px;
+ul.social-icons {
+    list-style: none;
 }
 
-.presentation-i .social-medias li {
+ul.social-icons li {
     display: inline-block;
-    padding: 5px 5px;
+    margin: 0 3px;
 }
 
-.presentation-i .social-medias li i {
+ul.social-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    line-height: 40px;
+    position: relative;
+    transition: .5s;
+    background: #fff;
+    transform-style: preserve-3d;
+}
+
+ul.social-icons .front, ul.social-icons .back {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateZ(15px);
+    color: #212121;
     font-size: 30px;
-    color: #000;
 }
 
+ul.social-icons .back {
+    transform: rotateX(90deg) translateZ(20px);
+    /* backface-visibility: hidden; */
+}
+
+a.facebook .back i {
+    color: #1d4E89;
+}
+
+a.youtube .back i {
+    color: rgba(255, 0, 0, 0.815);
+}
+
+a.linkedin .back i {
+    color: #f2962e;
+}
+
+a.github .back i {
+    color: #f76838;
+}
+
+a.facebook .front, a.github .front,
+ a.linkedin .front, a.youtube .front {
+     background: #fff;
+}
+
+.social-icons a:hover {
+    transform: rotateX(-90deg);
+}
+
+.social-icons a:hover .back {
+    backface-visibility: visible;
+}
+
+.social-icons .front i {
+    color: #000;
+    background: #fff;
+}
+
+.social-icons .back i {
+    color: #fff;
+}
+
+
+/* end social icons */
 
 .w3_agile_logo h1 a span {
     display: block;
@@ -568,7 +633,7 @@ footer .container .social-footer {
 
 
 footer .container .social-footer li {
-    border-right: 1px solid rgba(255, 255, 255, 0.658);
+    /* border-right: 1px solid rgba(255, 255, 255, 0.658); */
     display: inline-block;
     line-height: 30px;
     margin-right: 5px;
