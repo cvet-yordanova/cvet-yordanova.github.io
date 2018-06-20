@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/contact.css">
+    <title></title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">Бора</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <ul class="navbar-nav  ml-md-auto d-none d-md-flex">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">НАЧАЛО</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">ЗА НАС</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">ГАЛЕРИЯ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">ЦЕНИ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">СПА И БАЛНЕОЛОГИЯ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">КОНТАКТИ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">ВЕЛИКДЕН</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-5 map-container">
+
+                    <div id="map" style="height: 100%; width: 100%">
+                        
+                    </div>
+                    <div class="info">
+                            <section>
+                                <h3>Нашит адрес</h3>
+                                <p>гр. Павликени, ул "Гоце Делчев" 7</p>
+                            </section>
+                            <section>
+                                <h3>Телефон</h3>
+                                <p>тел./факс:0610/78 535</p>
+                                <p>GSM:05489 453 600</p>
+                            </section>
+                            <section>
+                                <h3>email</h3>
+                                <p>example@info.com</p>
+                            </section>
+                        </div>
+                </div>
+                <div class="col-md-7">
+                    <form>
+                        <div>
+                            <h1>Контакти</h1>
+                        </div>
+                        <div class="form-group">
+                            <!-- <label for="name">Име</label> -->
+                            <input type="text" class="" id="name" aria-describedby="name" placeholder="Име">
+
+                        </div>
+                        <div class="form-group">
+                            <!-- <label for="fathername">Фамилия</label> -->
+                            <input type="text" class="" id="fathername" placeholder="Фамилия">
+                        </div>
+                        <div class="form-group">
+                            <!-- <label for="phone">Телефон</label> -->
+                            <input type="text" class="" id="phone" placeholder="Телефон">
+                        </div>
+
+                        <div class="form-group">
+                            <!-- <label for="email">email</label> -->
+                            <input type="text" class="" id="email" placeholder="email">
+                        </div>
+                        <div class="form-group">
+                            <!-- <label for="message">Относно</label> -->
+                            <textarea type="text" class="" id="message" placeholder="Относно ..." rows="8"></textarea>
+                        </div>
+                        <button type="submit" class="clear">Изчисти</button>
+                        <button type="submit" class="send">Изпрати</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+<script>
+    function initMap() {
+        var uluru = { lat: 43.238733, lng: 25.306592 };
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 9,
+            center: uluru
+        });
+        var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+        });
+    }
+</script>
+<script src="../js/jquery-2.1.4.min.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYOHcAsnPec4zWNYnFFH5hKsUIag0lkAw&callback=initMap"
+    type="text/javascript"></script>
+
+</html>
