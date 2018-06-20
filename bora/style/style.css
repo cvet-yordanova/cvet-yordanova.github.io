@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700");
+body {
+  font-family: 'Roboto', 'sans-serif'; }
+
+nav {
+  height: 80px;
+  background: white !important;
+  border-top: 4px solid #87BA45;
+  margin-bottom: 5px !important;
+  box-shadow: 0px 0px 4px rgba(1, 1, 1, 0.1); }
+  nav ul {
+    font-size: 1rem; }
+    nav ul li {
+      margin: 0px 7px; }
+
+.navbar-default {
+  border: none !important;
+  background: none !important;
+  margin: 0;
+  min-height: 0 !important;
+  padding: 0 !important; }
+
+.content {
+  background: url("../img/123456.jpg") no-repeat;
+  background-size: auto;
+  background-position: top right;
+  z-index: -10;
+  position: relative; }
+
+.amenities-c {
+  background: #F8F6F3;
+  padding: 10px;
+  position: relative;
+  overflow: hidden;
+  z-index: -1;
+  display: inline-block; }
+  .amenities-c .dec-square {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    transform: rotate(30deg);
+    left: -100px;
+    background: #ECF0E1;
+    z-index: 1; }
+  .amenities-c h2 {
+    z-index: 2;
+    display: block;
+    position: relative;
+    color: #87BA45;
+    font-size: 1.3rem;
+    padding: 25px 0 10px 10px; }
+  .amenities-c .amenities-list {
+    position: relative;
+    z-index: 5; }
+    .amenities-c .amenities-list ul {
+      list-style: none !important;
+      background: rgba(248, 246, 243, 0.5);
+      padding: 15px 15px; }
+      .amenities-c .amenities-list ul li {
+        padding: 5px;
+        color: #87BA45; }
+    .amenities-c .amenities-list span {
+      display: inline-block;
+      width: 13px;
+      height: 13px;
+      border-radius: 50%;
+      background: #87BA45;
+      margin-right: 5px;
+      border: 4px solid rgba(255, 255, 255, 0.3); }
+
+.pricing-table-c {
+  background: rgba(255, 255, 255, 0.6);
+  padding: 13px;
+  display: inline-block;
+  padding-top: 0px; }
+  .pricing-table-c .pricing-table-in {
+    padding: 20px;
+    padding-left: 25px; }
+    .pricing-table-c .pricing-table-in h1 {
+      color: #87BA45;
+      font-size: 2rem;
+      padding: 15px 8px; }
+    .pricing-table-c .pricing-table-in .tables-container {
+      background: rgba(255, 255, 255, 0.8);
+      padding: 13px;
+      margin-bottom: 10px; }
+      .pricing-table-c .pricing-table-in .tables-container .table1, .pricing-table-c .pricing-table-in .tables-container .table2 {
+        width: 90%;
+        margin: auto;
+        padding: 15px;
+        color: #87BA45; }
+        .pricing-table-c .pricing-table-in .tables-container .table1 thead, .pricing-table-c .pricing-table-in .tables-container .table2 thead {
+          background: rgba(248, 246, 243, 0.4); }
+          .pricing-table-c .pricing-table-in .tables-container .table1 thead td, .pricing-table-c .pricing-table-in .tables-container .table2 thead td {
+            font-size: 17px;
+            text-transform: uppercase;
+            font-weight: 500; }
+        .pricing-table-c .pricing-table-in .tables-container .table1 tr td, .pricing-table-c .pricing-table-in .tables-container .table2 tr td {
+          padding: 10px 22px;
+          border-bottom: 2px solid rgba(135, 186, 69, 0.2); }
+        .pricing-table-c .pricing-table-in .tables-container .table1 tr td:nth-child(2), .pricing-table-c .pricing-table-in .tables-container .table2 tr td:nth-child(2) {
+          font-size: 18px;
+          font-weight: 500; }
+      .pricing-table-c .pricing-table-in .tables-container .table2 {
+        width: 90%;
+        margin: auto;
+        padding: 15px;
+        color: #87BA45; }
+        .pricing-table-c .pricing-table-in .tables-container .table2 thead {
+          background: rgba(248, 246, 243, 0.4); }
+          .pricing-table-c .pricing-table-in .tables-container .table2 thead td {
+            font-size: 17px;
+            text-transform: uppercase;
+            font-weight: 500; }
+    .pricing-table-c .pricing-table-in .tax-note {
+      margin: 25px 15px 10px 15px;
+      padding: 10px 15px;
+      color: #87BA45;
+      font-size: 0.9rem;
+      color: #f7b733; }
+    .pricing-table-c .pricing-table-in .pool-note {
+      margin: 0px 15px 25px 15px;
+      padding: 5px 15px;
+      font-size: 1rem;
+      font-weight: 400;
+      color: #87BA45; }

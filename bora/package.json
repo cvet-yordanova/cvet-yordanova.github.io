@@ -1,0 +1,17 @@
+{
+  "name": "bora-pricing",
+  "version": "1.0.0",
+  "description": "hotel bora pricing page",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss style/style.css -w"
+  },
+  "author": "Tsvetelina Yordanova",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.9.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.1"
+  }
+}
