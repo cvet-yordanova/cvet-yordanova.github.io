@@ -60,8 +60,15 @@ header {
     background-position: center;
     width: 100%;
     margin: auto;
-
+	filter: grayscale(80%);
+	
 }
+
+header#map {
+	opacity: .4;
+}
+
+
 
 .presentation-box {
     margin-top: -8em;
@@ -100,7 +107,7 @@ header {
 
 .presentation-c {
     /* background: rgba(1, 1, 1, .3); */
-    color: #fff;
+    color: #000;
     padding: 10px;
     padding-left: 20px;
     position: relative;
@@ -110,7 +117,8 @@ header {
 .presentation-c .dec-circle {
     /* display: block; */
     position: absolute;
-    color: rgba(255, 255, 255, .15);
+    color: rgba(1, 1, 1, .06);
+	color: transparent;
     /* width: 300px;
     height: 300px; */
     font-size: 6em;
@@ -124,10 +132,26 @@ header {
     padding-top: .9em ;
     
     font-size: 3.3em;
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 10px;
-    color: #fff;
+    color: #000;
+	position:relative;
+	/*background: rgba(255, 255, 255, .4);*/
+	letter-spacing: -4px;
+	
 }
+
+.presentation-c h1:after {
+	content: '';
+	position: absolute;
+	height: 3px;
+	background: #000;
+	width: 100%;
+	top: 80%;
+	left: 0;
+	
+}
+
 
 .presentation-i p {
     font-size: 14px;
@@ -304,7 +328,7 @@ a.facebook .front, a.github .front,
 .m_nav_ham {
     width: 30px;
     height: 3px;
-    background: #fff;
+    background: #000;
     margin: 5px auto;
 }
 
