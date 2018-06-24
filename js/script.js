@@ -67,6 +67,7 @@
     $(document).ready(function(){
         allSectionsFadeOut();
         $('#skills').fadeIn(200);
+		$('#timeline').fadeIn(200);
     })
 
     homeButton.addEventListener("click", function(event){
@@ -74,6 +75,7 @@
         allSectionsFadeOut();
         toggleClass(homeButton)
         $('#skills').fadeIn(200);
+		$('#timeline').fadeIn(200);
     });
 
     portfolioButton.addEventListener("click", function(event){
@@ -102,6 +104,7 @@
         $('#skills').fadeOut(400);
         $('#blog').fadeOut(400);
         $('#gallery').fadeOut(400);
+		$('#timeline').fadeOut(400);
     }
 
     function toggleClass(element){
