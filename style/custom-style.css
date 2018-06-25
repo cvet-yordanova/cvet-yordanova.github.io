@@ -60,15 +60,8 @@ header {
     background-position: center;
     width: 100%;
     margin: auto;
-	filter: grayscale(80%);
-	
+
 }
-
-header#map {
-	opacity: .4;
-}
-
-
 
 .presentation-box {
     margin-top: -8em;
@@ -115,10 +108,9 @@ header#map {
 }
 
 .presentation-c .dec-circle {
-    /* display: block; */
+    display: none; 
     position: absolute;
-    color: rgba(1, 1, 1, .06);
-	color: transparent;
+    color: rgba(255, 255, 255, .15);
     /* width: 300px;
     height: 300px; */
     font-size: 6em;
@@ -151,7 +143,6 @@ header#map {
 	left: 0;
 	
 }
-
 
 .presentation-i p {
     font-size: 14px;
@@ -854,7 +845,6 @@ footer .container col-sm-6 ul{
     /* .presentation-c {
        padding-left: 20px !important;
     }
-
     .presentation-box .col-md-3 {
         padding: 0 !important;
         margin-right: 15px;
@@ -1133,14 +1123,3 @@ footer .container col-sm-6 ul{
 @media screen and (max-width: 320px) {
 
 }
-
-
-
-
-
-
-
-
-
-
-
